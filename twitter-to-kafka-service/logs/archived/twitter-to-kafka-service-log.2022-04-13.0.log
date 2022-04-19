@@ -1,0 +1,47 @@
+2022-04-13 16:27:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 10915 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2022-04-13 16:27:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-04-13 16:27:51 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 25.727 seconds (JVM running for 31.103)
+2022-04-13 16:27:51 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2022-04-13 16:27:51 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2022-04-13 16:27:51 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2022-04-13 16:27:51 [main] ERROR c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Mahesh, Pavan, Pvnr, Koko]
+2022-04-13 16:27:51 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2022-04-13 16:27:51 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream with keywords: [Java, Microservices, Kafka, Elasticsearch]
+2022-04-13 16:28:00 [SpringContextShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2022-04-13 16:28:49 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 10929 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2022-04-13 16:28:49 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-04-13 16:29:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 27.298 seconds (JVM running for 35.957)
+2022-04-13 16:29:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2022-04-13 16:29:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2022-04-13 16:29:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2022-04-13 16:29:04 [main] ERROR c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Mahesh, Pavan, Pvnr, Koko]
+2022-04-13 16:29:05 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2022-04-13 16:29:05 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream with keywords: [Java, Microservices, Kafka, Elasticsearch]
+2022-04-13 16:29:06 [SpringContextShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2022-04-13 16:29:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 10942 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2022-04-13 16:29:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-04-13 16:29:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 5.458 seconds (JVM running for 9.355)
+2022-04-13 16:29:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2022-04-13 16:29:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2022-04-13 16:29:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2022-04-13 16:29:37 [main] ERROR c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Mahesh, Pavan, Pvnr, Koko]
+2022-04-13 16:29:38 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2022-04-13 16:29:38 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream with keywords: [Java, Microservices, Kafka, Elasticsearch]
+2022-04-13 16:29:41 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2022-04-13 16:29:41 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2022-04-13 16:29:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - uncle pee : RT @aptlearn_io: Skills Required for different sector
+
+Software Eng: C++, Java, Python, JS
+
+Web Dev: HTML, CSS, & JavaScript
+
+Game Dev: Uni…
+2022-04-13 16:29:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Sude ✨ : RT @kitaponon: Franz Kafka'nın Milena Jesenská aşkı ; https://t.co/IpK09szBNS
+2022-04-13 16:29:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - 🌵 : RT @kitaponon: Franz Kafka'nın Milena Jesenská aşkı ; https://t.co/IpK09szBNS
+2022-04-13 16:29:48 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - akaza : RT @_kwansa: A tech company is looking to expand its team by recruiting:
+
+- UI/UX Designers
+
+- Front end Developpers (Angular, Vue or React…
+2022-04-13 16:29:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Rekha Devi : RT @confluentinc: In this course on microservices, you'll learn how to leverage a cloud-native streaming platform for building modern appli…
+2022-04-13 16:30:04 [SpringContextShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream

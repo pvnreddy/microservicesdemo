@@ -1,0 +1,197 @@
+2021-12-25 09:28:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 13291 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-25 09:28:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 09:28:01 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-12-25 09:28:01 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-25 09:28:01 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication required a bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' in your configuration.
+
+2021-12-25 09:29:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 13306 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-25 09:29:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 09:29:04 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-12-25 09:29:04 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-25 09:29:04 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication required a bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' in your configuration.
+
+2021-12-25 09:30:41 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 13370 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-25 09:30:41 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 09:30:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.854 seconds (JVM running for 3.163)
+2021-12-25 09:30:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-25 09:30:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-25 09:30:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-25 09:30:42 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-12-25 09:30:42 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream with keywords[Ljava.lang.String;@29314cc9
+2021-12-25 09:30:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-12-25 09:30:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-12-25 09:30:44 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Java Geek Tech : RT @javacodegeeks: A guide to the InfluxDBMapper and QueryBuilder for #Java Part: 1 - #Java Code Geeks - 2021 https://t.co/04OjrCSspo
+2021-12-25 09:30:49 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Discover-tech : RT @programmerjoke9: Deploy now!!#100Daysofcode #javascript #programming #dev #linux #java #programming #CodeNewbie #python #reactjs #bugbo…
+2021-12-25 09:30:49 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Discover-tech : RT @EverydayKiiara: What Exactly Haven’t I Done For You in The Last 7 Years🎁@KIIARA #trendingkiiara #WordPress #HTML #WordPress #fintech #i…
+2021-12-25 09:30:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Discover-tech : RT @EverydayKiiara: Y’all He Claims He’s a Psychologist at 23 🚩👩🏻‍⚖️ #FactCheck This #Ad #100DaysOfCode #Python #HTML #AI #IoT #IIoT #Azure…
+2021-12-25 09:30:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Angsuman Chakraborty : Latest Top #Java Technology News! https://t.co/23sMBesSJ3 #f #java #python
+2021-12-25 09:30:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - thxmas 🎄 : Call me webmaster.jar... because I run on Java!!! (Coffee)
+2021-12-25 09:30:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - もめん/MO-MEN : orajaって今javaとかよくわからんことしなくてもできるんか
+2021-12-25 09:30:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - A_Real_Human_Named_Ash : RT @programmerjoke9: Deploy now!!#100Daysofcode #javascript #programming #dev #linux #java #programming #CodeNewbie #python #reactjs #bugbo…
+2021-12-25 09:31:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Pythonista Bot : RT @angsuman: Latest Top #Java Technology News! https://t.co/23sMBesSJ3 #f #java #python
+2021-12-25 09:31:16 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Rosia_BOT : RT @ALSALHAN: Infographic: Data Scientist’s Anatomy
+
+#DataScience #BigData #Analytics #AI #Tech #PyTorch #Python #TensorFlow #Java #ML #Ser…
+2021-12-25 09:31:27 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Cyber Security News : RT @programmerjoke9: Deploy now!!#100Daysofcode #javascript #programming #dev #linux #java #programming #CodeNewbie #python #reactjs #bugbo…
+2021-12-25 09:31:48 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitchi : RT @EverydayKiiara: What Exactly Haven’t I Done For You in The Last 7 Years🎁@KIIARA #trendingkiiara #WordPress #HTML #WordPress #fintech #i…
+2021-12-25 09:31:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - gaber🤠 : RT @oimateusaqui: Usei meu aniversário como seed no #Minecraft - 22062004 (22/06/2004) - e o melhor, vai ser o mesmo mundo no Java e Bedroc…
+2021-12-25 09:31:59 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Minecraft For Life! : RT @SkyBladeNetwork: Congratulations to Jplays225 for winning Build of the Week! 👷‍♂️
+
+And a merry Christmas to you from everyone here at S…
+2021-12-25 09:32:00 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - T_atenda : @NatureSOFT_054 As long as ukuuya ne icecream… wo tsvaga ma java outfits mu Masvingo umo 😝
+2021-12-25 09:32:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Victor Mwangi : RT @Sharat_Chander: It's "Thank You Thursday"!
+
+Today's featured #Java community stars are @techgirl1908 & @trisha_gee who've helped so man…
+2021-12-25 09:32:25 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Steven Negishi🧢 : @DThompsonDev @scrimba @TheTechRally Love to really sink my teeth into Java Script this year through this course!!
+2021-12-25 09:32:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - check pinned ✨ : wts sharing pentagon 2022 season’s greetings want to sell sg22 pasarpentagon
+2021-12-25 09:32:31 [SpringContextShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2021-12-25 09:42:08 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 13515 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-25 09:42:08 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 09:42:09 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.532 seconds (JVM running for 2.479)
+2021-12-25 09:42:09 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-25 09:42:09 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-25 09:42:09 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-25 09:42:09 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-12-25 09:42:09 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream with keywords: [Ljava.lang.String;@56de6d6b
+2021-12-25 09:42:16 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-12-25 09:42:16 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-12-25 09:42:16 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - 𝓊𝓀𝒾𝓂𝒾𝓃【ウキミン】| 固ツイにて企画開催中| : RT @ukimin3: おはようございます☀
+
+今日から冬休み✨いつもよりも使える時間が増えるので、しっかりと有効活用！
+【今日の積み上げ】
+●Twitter運用
+●Java
+●受験勉強
+
+今日から、受験勉強を始めていきたいと思います‼️応援してくれたら嬉しいな🎶
+
+今日も頑…
+2021-12-25 09:42:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - MtNy : RT @DisterJPN: 【速報】
+
+マイクラjava版と統合版一緒に出来るサーバーを作りました。
+
+前回統合版だけラグかったなどの意見を頂きましたので、今回大幅アップデートを行いjava、統合版共にラグを抑える事に成功しました。
+
+追記→java版でも統合版でも参加可能な…
+2021-12-25 09:42:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Tharindu Abeydeera : RT @elbrujohalcon: Another week, another old #erlang post to re-share… This one is about the interaction between #erlang and #java… and no,…
+2021-12-25 09:42:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Sinem🌹 : sahtekarlar heryerde daha kolay ilerliyor mana alemi haric tabiki
+2021-12-25 09:42:48 [SpringContextShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2021-12-25 09:49:30 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 13669 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-25 09:49:30 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 09:49:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.416 seconds (JVM running for 2.372)
+2021-12-25 09:49:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-25 09:49:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-25 09:49:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-25 09:49:31 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-25 09:49:31 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:776)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:31)
+Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
+	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
+	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:46)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:31)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:46)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:786)
+	... 5 common frames omitted
+2021-12-25 09:49:31 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2021-12-25 09:53:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 13745 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-25 09:53:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 09:53:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.287 seconds (JVM running for 2.567)
+2021-12-25 09:53:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-25 09:53:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-25 09:53:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-25 09:53:07 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream with keywords: [Java, Microservices, Kafka, Elasticsearch]
+2021-12-25 09:53:07 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-12-25 09:53:14 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-12-25 09:53:14 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-12-25 09:53:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -  infinite.Kiiara : RT @_Appremoo_Here: ~ logic gates!
+#100DaysOfCode
+@AmiitCodes
+
+#AI #blog #OpenSource #Python #programming #Algorithms #Developer #Android #…
+2021-12-25 09:53:15 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Deepak The Community Builder 👷‍♂️ : Merry Christmas 🎄 
+
+I am hiring for these roles in 2022 for @HabitateIO & @C3UniverseHQ 
+- Programmers javascript and Java.
+- Community Managers
+- Someone to create early-stage marketing campaigns.
+- freelance podcast hosts.  
+- Witty-fun writers, interested in doing comics.
+2021-12-25 09:53:26 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - NanoBot : RT @Krishnavyshakr: >> Lol 5
+#100Daysofcode #javascript #programming #dev #linux #java #programming #CodeNewbie #python #reactjs #bugbounty…
+2021-12-25 09:53:49 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - J. Daniel Sawyer : RT @Ronald_vanLoon: The AxiDraw writing machine is so satisfying
+by @InTheKnow
+
+#MI #Tech #Technology #Java #IT
+
+Cc: @paula_piccard @MikeQu…
+2021-12-25 09:53:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Amanda : RT @gp_pulipaka: Best AI and Deep Learning Books to Read in 2022. #BigData #Analytics #DataScience #IoT #IIoT #PyTorch #Python #RStats #Ten…
+2021-12-25 09:53:52 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Tinashe Lewis Karumazondo : RT @Boikiu_zw: 🗣"roki paacharambana na Passion Java ndopamuchaona kuti irovha 🤞"
+2021-12-25 09:54:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - ひかりTVセール商品通知@相互フォロー : ❗ランキング:11位❗ (今週の新着)
+
+「【2022年福袋】セットが断然お得！和平オリジナル ソロキャンプセット 」
+メーカ:
+
+価格:¥5,000(13:24)
+
+https://t.co/fMQ7KBeRq6
+2021-12-25 09:54:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - ひかりTVパソコン機器ランキング : ❗ランキング：11位❗(グラフィックボード)
+
+「グラフィックボード RTX3090 PHANTOM 24G GDDR6X 384bit 3-DP HDMI NED3090019SB-1021P-G」
+メーカ:Gainward
+
+価格:¥329,980✨
+🔥売り切れ間近🔥(13:24)
+
+https://t.co/np2O84T3gN
+2021-12-25 09:54:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - drive slow homie : @W_takes_only Simulacra and Simulation - Jean Baudrillard
+The Consumer Society - Jean Baudrillard
+Phenomenology of Spirit - GWF Hegel
+Mirror of Simple Souls - Marguerite Porette
+The Trial - Franz Kafka
+The Complete Stories - Franz Kafka
+The Coming Insurrection - The Invisible Committee
+2021-12-25 09:54:25 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - NanoBot : RT @gp_pulipaka: Best AI and Deep Learning Books to Read in 2022. #BigData #Analytics #DataScience #IoT #IIoT #PyTorch #Python #RStats #Ten…
+2021-12-25 09:54:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - David Evelyn - Holly Jolly Hawk : RT @VIZMedia: Make sure to leave out milk and cookies for Kafka tonight! 😆🎄
+
+via Kaiju No. 8 https://t.co/OkxWiPJDEy
+2021-12-25 09:54:33 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - NAKAMURA Yoshiyuki (中村 良幸) : これってやっぱり名古屋のあの自動車会社関連の案件なんですかね…😇
+2021-12-25 09:54:35 [SpringContextShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream

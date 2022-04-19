@@ -1,0 +1,27 @@
+2021-12-30 12:24:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 41905 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-30 12:24:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-30 12:24:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.036 seconds (JVM running for 4.067)
+2021-12-30 12:24:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-30 12:24:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-30 12:24:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-30 12:24:32 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-12-30 12:24:32 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream with keywords: [Java, Microservices, Kafka, Elasticsearch]
+2021-12-30 12:24:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - connect timed out
+2021-12-30 12:24:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 250 milliseconds
+2021-12-30 12:24:53 [Twitter Stream consumer /  [1][Waiting for 250 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-12-30 12:25:13 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - connect timed out
+2021-12-30 12:25:13 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 500 milliseconds
+2021-12-30 12:25:14 [Twitter Stream consumer /  [1][Waiting for 500 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-12-30 12:25:34 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - connect timed out
+2021-12-30 12:25:34 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 1000 milliseconds
+2021-12-30 12:25:35 [Twitter Stream consumer /  [1][Waiting for 1000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-12-30 12:25:41 [SpringContextShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2021-12-30 12:41:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 42112 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-30 12:41:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-30 12:41:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.615 seconds (JVM running for 3.098)
+2021-12-30 12:41:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-30 12:41:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-30 12:41:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-30 12:41:03 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-12-30 12:41:03 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream with keywords: [Java, Microservices, Kafka, Elasticsearch]
+2021-12-30 12:41:22 [SpringContextShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream

@@ -1,0 +1,121 @@
+2021-12-26 23:29:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 4527 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-26 23:29:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-26 23:29:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.732 seconds (JVM running for 3.215)
+2021-12-26 23:29:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-26 23:29:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:29:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-26 23:29:20 [main] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Starting mock filtering twitter stream for keywords {}[Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:34:41 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 4590 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-26 23:34:41 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-26 23:34:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.363 seconds (JVM running for 3.366)
+2021-12-26 23:34:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-26 23:34:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:34:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-26 23:34:42 [main] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Starting mock filtering twitter stream for keywords {}[Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:35:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 4608 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-26 23:35:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-26 23:35:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.432 seconds (JVM running for 2.095)
+2021-12-26 23:35:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-26 23:35:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:35:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-26 23:35:37 [main] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Starting mock filtering twitter stream for keywords {}[Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:36:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 4616 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-26 23:36:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-26 23:36:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.422 seconds (JVM running for 2.785)
+2021-12-26 23:36:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-26 23:36:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:36:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-26 23:36:32 [main] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Starting mock filtering twitter stream for keywords {}[Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:38:39 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 4636 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-26 23:38:39 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-26 23:38:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.487 seconds (JVM running for 2.501)
+2021-12-26 23:38:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-26 23:38:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:38:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-26 23:38:40 [main] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Starting mock filtering twitter stream for keywords {}[Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:41:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 4661 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-26 23:41:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-26 23:41:29 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.452 seconds (JVM running for 2.83)
+2021-12-26 23:41:29 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-26 23:41:29 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:41:29 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-26 23:41:29 [main] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Starting mock filtering twitter stream for keywords {}[Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:49:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 4821 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-26 23:49:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-26 23:49:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.339 seconds (JVM running for 2.094)
+2021-12-26 23:49:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-26 23:49:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:49:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-26 23:49:12 [main] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Starting mock filtering twitter stream for keywords {}[Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:49:12 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Tweet: {"Created_at":"Sun Dec 26 23:49:12 IST 2021","id":"8995779063018170345","text":"ipsum elit et ullamcorper Orci at laoreet Kafka amet ipsum elit montes ullamcorper varius","user":{"id":"678646387158567883",}
+2021-12-26 23:50:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 4834 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-26 23:50:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-26 23:50:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.125 seconds (JVM running for 1.922)
+2021-12-26 23:50:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-26 23:50:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:50:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-26 23:50:22 [main] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Starting mock filtering twitter stream for keywords {}[Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:50:23 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Tweet: {"Created_at":"Sun Dec 26 23:50:23 IST 2021","id":"2114328755219643414","text":"ullamcorper montes Nunc ipsum condimentum elit magnis Nunc Java at laoreet penatibus sit magnis ridiculus","user":{"id":"5446269221967417276",}
+2021-12-26 23:53:45 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 4884 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-26 23:53:45 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-26 23:53:45 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.266 seconds (JVM running for 2.016)
+2021-12-26 23:53:45 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-26 23:53:45 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:53:45 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-26 23:53:45 [main] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Starting mock filtering twitter stream for keywords {}[Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:53:45 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Tweet: {"Created_at":"Sun Dec 26 23:53:45 IST 2021","id":"541607717778841234","text":"condimentum libero dolor condimentum nascetur et laoreet Microservices nec at nec adipiscing in natoque","user":{"id":"3440919159909932705",}
+2021-12-26 23:53:45 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Error while getting Twitter status object
+2021-12-26 23:54:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 4905 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-26 23:54:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-26 23:54:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.334 seconds (JVM running for 2.03)
+2021-12-26 23:54:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-26 23:54:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:54:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-26 23:54:32 [main] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Starting mock filtering twitter stream for keywords {}[Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:54:32 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Tweet: {"Created_at":"Sun Dec 26 23:54:32 IST 2021","id":"553044296095344695","text":"in laoreet penatibus Curabitur Orci parturient Kafka in libero natoque Nunc penatibus","user":{"id":"3095225769010866592",}
+2021-12-26 23:54:32 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Error while getting Twitter status objectnull
+2021-12-26 23:57:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 4948 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-26 23:57:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-26 23:57:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.122 seconds (JVM running for 1.941)
+2021-12-26 23:57:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-26 23:57:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:57:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-26 23:57:43 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-12-26 23:57:43 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream with keywords: [Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:57:48 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-12-26 23:57:48 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-12-26 23:57:48 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Paribes, the rigger you didn't know about... : JAVA NEWS: @JavaCreates has officially announced that he's making episode 3 of season 2 of "Roblox Bully Story", Java says he's trying his best to release it by New Years.
+#JavaNews #JavaCreates #JavaAnimation #News https://t.co/RBODgd7mnm
+2021-12-26 23:57:51 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - 零阪麻琴《ぜろさか・ざ・らいばー》💉^2 : メモ
+・POTIONITEMはなぜクラフトに使えない？
+・ハーフ木材をクラフトに使う方法
+・ガラス板は着色を排除するといける？
+・精錬レシピが使えない謎
+・Caused by: java.lang.IllegalArgumentException
+2021-12-26 23:57:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - raul : RT @lupitacode: 📊 TOP DE LENGUAJES DE PROGRAMACION EN 2021 SEGUN LA IEEE:
+
+1⃣ Python 
+2⃣ Java
+3⃣ C
+4⃣ C++
+5⃣ JavaScript
+
+🧵
+2021-12-26 23:58:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Indie Game Bot : RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+FREE. NO MIDDLEMEN
+#Job #Java #Programming #Coding #100DaysofCode #DEVCo…
+2021-12-26 23:58:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - GameDevMiniBot : RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+FREE. NO MIDDLEMEN
+#Job #Java #Programming #Coding #100DaysofCode #DEVCo…
+2021-12-26 23:58:07 [SpringContextShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2021-12-26 23:59:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on vpamulap-mac with PID 4968 (/Users/vpamulap/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by vpamulap in /Users/vpamulap/Downloads/microservices-demo)
+2021-12-26 23:59:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-26 23:59:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.458 seconds (JVM running for 2.977)
+2021-12-26 23:59:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2021-12-26 23:59:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:59:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices1!
+2021-12-26 23:59:15 [main] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Starting mock filtering twitter stream for keywords {}[Java, Microservices, Kafka, Elasticsearch]
+2021-12-26 23:59:15 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Tweet: {"Created_at":"Sun Dec 26 23:59:15 IST 2021","id":"7940635899489217592","text":"ipsum magnis nec Lorem amet ullamcorper mus laoreet Elasticsearch penatibus nascetur ridiculus adipiscing adipiscing ipsum nec","user":{"id":"8032971035343055656",}
+2021-12-26 23:59:15 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockTwitterStreamRunner - Error while getting Twitter status objectnull
