@@ -16,17 +16,21 @@
         <module name="twitter-to-kafka-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="JasyptEncryptor" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="JasyptEncryptor" options="-parameters" />
       <module name="app-config-data" options="-parameters" />
       <module name="common-config" options="-parameters" />
       <module name="config-server" options="-parameters" />
-      <module name="kafka" options="-parameters" />
+      <module name="kafka" options="" />
       <module name="kafka-admin" options="-parameters" />
       <module name="kafka-model" options="-parameters" />
       <module name="kafka-producer" options="-parameters" />
-      <module name="microservices-demo" options="" />
+      <module name="microservices-demo" options="-parameters" />
       <module name="twitter-to-kafka-service" options="-parameters" />
     </option>
   </component>
