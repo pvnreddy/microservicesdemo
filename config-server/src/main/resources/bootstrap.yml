@@ -9,10 +9,10 @@ spring:
           uri: https://github.com/pvnreddy/microservices-demo-config
           default-label: main
           username: pvnreddy
-          password: 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
+          password: '{cipher}4f73f7854714a6f62c6c68d62e094c3f08ff059932dff9944c7c9bb0795ba0b4ed1343f8b6c2871d67848c326c0218e7918cd5867ed9ab9c4e7dfb27c1dd1fe5'
           clone-on-start: true
     fail-fast: true
   security:
     user:
       name: spring-cloud-sec
-      password: spring-cloud-sec
+      password: '{cipher}70796c82cb9f330ac00eb63f8e2bbce3518cf317887ed9d74c022d58c3ddfa9ab38a083fbbcfe37698b6d3e0c268731b'

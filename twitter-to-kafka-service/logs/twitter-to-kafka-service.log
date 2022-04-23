@@ -1580,3 +1580,279 @@ Caused by: java.lang.NullPointerException: null
 2022-04-20 10:13:05 [pool-1-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1650429785769
 2022-04-20 10:13:05 [kafka-producer-network-thread | producer-2] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-2] Cluster ID: 8zVM7lvVRsWweBUCVki3-w
 2022-04-20 10:13:05 [kafka-producer-network-thread | producer-2] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Received new metadata. topic: twitter-topic, partition:1, offset: 62, timestamp: 1650429785805, at time 687772788228180
+2022-04-23 09:36:57 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-04-23 09:36:59 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=twitter-to-kafka-service,config-client, profiles=[twitter_to_kafka], label=null, version=e7b840b4c3af5c47d2218fad768dc866eb6b7213, state=null
+2022-04-23 09:36:59 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/pvnreddy/microservices-demo-config/config-client-twitter_to_kafka.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/pvnreddy/microservices-demo-config/config-client.yml'}]
+2022-04-23 09:36:59 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - The following profiles are active: twitter_to_kafka
+2022-04-23 09:37:00 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=bf742317-c5b1-33fb-b234-552137c4fb47
+2022-04-23 09:37:00 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$9835dedd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-23 09:37:00 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-04-23 09:37:00 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-04-23 09:37:00 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-04-23 09:37:00 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1650686820749
+2022-04-23 09:37:01 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b1c43a31-30d0-4bb2-8551-709cc9c397c8
+
+2022-04-23 09:37:01 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8080
+2022-04-23 09:37:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 6.056 seconds (JVM running for 7.353)
+2022-04-23 09:37:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application starts.....
+2022-04-23 09:37:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2022-04-23 09:37:01 [main] INFO  c.m.d.k.a.c.client.KafkaAdminClient - Creating 1 topic(s), attempt 0
+2022-04-23 09:37:01 [main] INFO  c.m.d.k.a.c.client.KafkaAdminClient - Reading Kafka topic [twitter-topic]. attempt 0
+2022-04-23 09:37:01 [main] INFO  c.m.d.k.a.c.client.KafkaAdminClient - Topic with name twitter-topic is ready
+2022-04-23 09:37:01 [main] INFO  c.m.d.k.a.c.client.KafkaAdminClient - Topic with name _schemas is ready
+2022-04-23 09:37:01 [main] INFO  c.m.d.k.a.c.client.KafkaAdminClient - Topic with name -twitter-topic is ready
+2022-04-23 09:37:01 [main] INFO  c.m.d.k.a.c.client.KafkaAdminClient - Topic with name __confluent.support.metrics is ready
+2022-04-23 09:37:02 [main] INFO  c.m.d.t.t.k.s.i.i.TwitterStreamInitializer - Kafka topics twitter-topic created
+2022-04-23 09:37:02 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Starting stream filtering with keywords[Java, Microservices, Kafka, Elasticsearch]
+2022-04-23 09:37:02 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2022-04-23 09:37:04 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2022-04-23 09:37:04 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2022-04-23 09:37:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Xeron Bot : RT @GavLaaaaaaaa: Oracle Java wins 'crypto bug of the year' for bypass flaw https://t.co/4XwY9HLoLF #programming #softwareengineering #bigd…
+2022-04-23 09:37:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received text RT @GavLaaaaaaaa: Oracle Java wins 'crypto bug of the year' for bypass flaw https://t.co/4XwY9HLoLF #programming #softwareengineering #bigd… sending it to kafka topic twitter-topic
+2022-04-23 09:37:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Sending message {"userId": 1354047563280707586, "id": 1517716637872447488, "text": "RT @GavLaaaaaaaa: Oracle Java wins 'crypto bug of the year' for bypass flaw https://t.co/4XwY9HLoLF #programming #softwareengineering #bigd\u2026", "createdAt": 1650686818000} to topic twitter-topic
+2022-04-23 09:37:04 [Twitter4J Async Dispatcher[0]] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 1638400
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2022-04-23 09:37:04 [Twitter4J Async Dispatcher[0]] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-04-23 09:37:04 [Twitter4J Async Dispatcher[0]] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2022-04-23 09:37:04 [Twitter4J Async Dispatcher[0]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-04-23 09:37:04 [Twitter4J Async Dispatcher[0]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-04-23 09:37:04 [Twitter4J Async Dispatcher[0]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1650686824423
+2022-04-23 09:37:04 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8zVM7lvVRsWweBUCVki3-w
+2022-04-23 09:37:04 [kafka-producer-network-thread | producer-1] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Received new metadata. topic: twitter-topic, partition:1, offset: 127, timestamp: 1650686824494, at time 17875692054948
+2022-04-23 09:37:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Xeron Bot : RT @Academic_pro2: Pay us to tackle your
+essay due
+ maths....
+sociology ..
+java script
+h/work
+anatomy
+accounting
+powerpoint
+essay pay  
+alg…
+2022-04-23 09:37:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received text RT @Academic_pro2: Pay us to tackle your
+essay due
+ maths....
+sociology ..
+java script
+h/work
+anatomy
+accounting
+powerpoint
+essay pay  
+alg… sending it to kafka topic twitter-topic
+2022-04-23 09:37:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Sending message {"userId": 1354047563280707586, "id": 1517716644591722498, "text": "RT @Academic_pro2: Pay us to tackle your\nessay due\n maths....\nsociology ..\njava script\nh/work\nanatomy\naccounting\npowerpoint\nessay pay  \nalg\u2026", "createdAt": 1650686820000} to topic twitter-topic
+2022-04-23 09:37:05 [kafka-producer-network-thread | producer-1] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Received new metadata. topic: twitter-topic, partition:1, offset: 128, timestamp: 1650686825668, at time 17876536234733
+2022-04-23 09:37:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Barbara Fritchie : RT @elonmusk: @engineers_feed I will verify you. 
+
+The current process for verification is like if Kafka had a Magic 8-Ball!
+2022-04-23 09:37:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received text RT @elonmusk: @engineers_feed I will verify you. 
+
+The current process for verification is like if Kafka had a Magic 8-Ball! sending it to kafka topic twitter-topic
+2022-04-23 09:37:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Sending message {"userId": 865225293841158145, "id": 1517716673075183617, "text": "RT @elonmusk: @engineers_feed I will verify you. \n\nThe current process for verification is like if Kafka had a Magic 8-Ball!", "createdAt": 1650686827000} to topic twitter-topic
+2022-04-23 09:37:12 [kafka-producer-network-thread | producer-1] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Received new metadata. topic: twitter-topic, partition:0, offset: 143, timestamp: 1650686832475, at time 17883350088714
+2022-04-23 09:37:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - 24K Retakez 🇺🇦 : RT @24KSharkey: NEW SERVER (java) !mc || !discord || #24ksocials #24kTeam https://t.co/Vwl8ajsNsC
+2022-04-23 09:37:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received text RT @24KSharkey: NEW SERVER (java) !mc || !discord || #24ksocials #24kTeam https://t.co/Vwl8ajsNsC sending it to kafka topic twitter-topic
+2022-04-23 09:37:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Sending message {"userId": 1323848179373142019, "id": 1517716707892072448, "text": "RT @24KSharkey: NEW SERVER (java) !mc || !discord || #24ksocials #24kTeam https://t.co/Vwl8ajsNsC", "createdAt": 1650686835000} to topic twitter-topic
+2022-04-23 09:37:20 [kafka-producer-network-thread | producer-1] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Received new metadata. topic: twitter-topic, partition:2, offset: 143, timestamp: 1650686840764, at time 17891642212517
+2022-04-23 09:37:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Whopcod : RT @CodingPullingo: Ionic 6 Google Map | Simple Map
+#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment #no…
+2022-04-23 09:37:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received text RT @CodingPullingo: Ionic 6 Google Map | Simple Map
+#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment #no… sending it to kafka topic twitter-topic
+2022-04-23 09:37:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Sending message {"userId": 1314164146934513665, "id": 1517716711604117505, "text": "RT @CodingPullingo: Ionic 6 Google Map | Simple Map\n#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment #no\u2026", "createdAt": 1650686836000} to topic twitter-topic
+2022-04-23 09:37:21 [kafka-producer-network-thread | producer-1] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Received new metadata. topic: twitter-topic, partition:0, offset: 144, timestamp: 1650686841780, at time 17892650455880
+2022-04-23 09:37:27 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Xeron Bot : RT @CodingPullingo: Ionic 6 Google Map | Simple Map
+#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment #no…
+2022-04-23 09:37:27 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received text RT @CodingPullingo: Ionic 6 Google Map | Simple Map
+#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment #no… sending it to kafka topic twitter-topic
+2022-04-23 09:37:27 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Sending message {"userId": 1354047563280707586, "id": 1517716733699805189, "text": "RT @CodingPullingo: Ionic 6 Google Map | Simple Map\n#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment #no\u2026", "createdAt": 1650686841000} to topic twitter-topic
+2022-04-23 09:37:27 [kafka-producer-network-thread | producer-1] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Received new metadata. topic: twitter-topic, partition:1, offset: 129, timestamp: 1650686847013, at time 17897948641524
+2022-04-23 09:37:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - 王(ワン)です : 「なぁ、お兄ちゃん。JavaとJavaScriptってどっちも同じだよね？」
+#駆け出しエンジニアと繋がりたい
+#プログラミング https://t.co/qE0ayPPHCe
+2022-04-23 09:37:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received text 「なぁ、お兄ちゃん。JavaとJavaScriptってどっちも同じだよね？」
+#駆け出しエンジニアと繋がりたい
+#プログラミング https://t.co/qE0ayPPHCe sending it to kafka topic twitter-topic
+2022-04-23 09:37:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Sending message {"userId": 1278231526975520768, "id": 1517716740394074112, "text": "「なぁ、お兄ちゃん。JavaとJavaScriptってどっちも同じだよね？」\n#駆け出しエンジニアと繋がりたい\n#プログラミング https://t.co/qE0ayPPHCe", "createdAt": 1650686843000} to topic twitter-topic
+2022-04-23 09:37:28 [kafka-producer-network-thread | producer-1] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Received new metadata. topic: twitter-topic, partition:2, offset: 144, timestamp: 1650686848640, at time 17899509430725
+2022-04-23 09:37:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Drinnak : RT @elonmusk: @engineers_feed I will verify you. 
+
+The current process for verification is like if Kafka had a Magic 8-Ball!
+2022-04-23 09:37:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received text RT @elonmusk: @engineers_feed I will verify you. 
+
+The current process for verification is like if Kafka had a Magic 8-Ball! sending it to kafka topic twitter-topic
+2022-04-23 09:37:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Sending message {"userId": 2843022584, "id": 1517716741442441216, "text": "RT @elonmusk: @engineers_feed I will verify you. \n\nThe current process for verification is like if Kafka had a Magic 8-Ball!", "createdAt": 1650686843000} to topic twitter-topic
+2022-04-23 09:37:28 [kafka-producer-network-thread | producer-1] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Received new metadata. topic: twitter-topic, partition:2, offset: 145, timestamp: 1650686848827, at time 17899694762473
+2022-04-23 09:37:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Coding Indian : Google Ads Linked In Assessment Solutions
+#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment #nodejs #php #webdeveloper #coding #react #vuejs #software #js #softwaredeveloper #developer #webdesign #programmer #jquery #...
+https://t.co/Qo31Nq8Y6R
+2022-04-23 09:37:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received text Google Ads Linked In Assessment Solutions
+#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment #nodejs #php #webdeveloper #coding #react #vuejs #software #js #softwaredeveloper #developer #webdesign #programmer #jquery #...
+https://t.co/Qo31Nq8Y6R sending it to kafka topic twitter-topic
+2022-04-23 09:37:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Sending message {"userId": 183984039, "id": 1517716754641956864, "text": "Google Ads Linked In Assessment Solutions\n#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment #nodejs #php #webdeveloper #coding #react #vuejs #software #js #softwaredeveloper #developer #webdesign #programmer #jquery #...\nhttps://t.co/Qo31Nq8Y6R", "createdAt": 1650686846000} to topic twitter-topic
+2022-04-23 09:37:32 [kafka-producer-network-thread | producer-1] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Received new metadata. topic: twitter-topic, partition:0, offset: 145, timestamp: 1650686852020, at time 17902887199664
+2022-04-23 09:37:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - 💀Cris Maquetaori Camacho💀 : RT @elonmusk: @engineers_feed I will verify you. 
+
+The current process for verification is like if Kafka had a Magic 8-Ball!
+2022-04-23 09:37:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received text RT @elonmusk: @engineers_feed I will verify you. 
+
+The current process for verification is like if Kafka had a Magic 8-Ball! sending it to kafka topic twitter-topic
+2022-04-23 09:37:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Sending message {"userId": 1267977527294910465, "id": 1517716766792814592, "text": "RT @elonmusk: @engineers_feed I will verify you. \n\nThe current process for verification is like if Kafka had a Magic 8-Ball!", "createdAt": 1650686849000} to topic twitter-topic
+2022-04-23 09:37:34 [kafka-producer-network-thread | producer-1] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Received new metadata. topic: twitter-topic, partition:1, offset: 130, timestamp: 1650686854889, at time 17905757200883
+2022-04-23 09:37:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - PieSocket Bot : RT @ramsatt: Google Ads Linked In Assessment Solutions
+#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment…
+2022-04-23 09:37:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received text RT @ramsatt: Google Ads Linked In Assessment Solutions
+#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment… sending it to kafka topic twitter-topic
+2022-04-23 09:37:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Sending message {"userId": 1515622581834977281, "id": 1517716776532037632, "text": "RT @ramsatt: Google Ads Linked In Assessment Solutions\n#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment\u2026", "createdAt": 1650686851000} to topic twitter-topic
+2022-04-23 09:37:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Xeron Bot : RT @ramsatt: Google Ads Linked In Assessment Solutions
+#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment…
+2022-04-23 09:37:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received text RT @ramsatt: Google Ads Linked In Assessment Solutions
+#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment… sending it to kafka topic twitter-topic
+2022-04-23 09:37:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Sending message {"userId": 1354047563280707586, "id": 1517716776523599872, "text": "RT @ramsatt: Google Ads Linked In Assessment Solutions\n#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment\u2026", "createdAt": 1650686851000} to topic twitter-topic
+2022-04-23 09:37:37 [kafka-producer-network-thread | producer-1] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Received new metadata. topic: twitter-topic, partition:0, offset: 146, timestamp: 1650686857140, at time 17908016396962
+2022-04-23 09:37:37 [kafka-producer-network-thread | producer-1] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Received new metadata. topic: twitter-topic, partition:1, offset: 131, timestamp: 1650686857142, at time 17908020012713
+2022-04-23 09:37:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Developer Bot 🤖 : RT @ramsatt: Google Ads Linked In Assessment Solutions
+#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment…
+2022-04-23 09:37:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received text RT @ramsatt: Google Ads Linked In Assessment Solutions
+#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment… sending it to kafka topic twitter-topic
+2022-04-23 09:37:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Sending message {"userId": 1437728609909706753, "id": 1517716778108874753, "text": "RT @ramsatt: Google Ads Linked In Assessment Solutions\n#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment\u2026", "createdAt": 1650686852000} to topic twitter-topic
+2022-04-23 09:37:37 [kafka-producer-network-thread | producer-1] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Received new metadata. topic: twitter-topic, partition:0, offset: 147, timestamp: 1650686857498, at time 17908363737234
+2022-04-23 09:37:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Rahul : RT @ramsatt: Google Ads Linked In Assessment Solutions
+#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment…
+2022-04-23 09:37:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received text RT @ramsatt: Google Ads Linked In Assessment Solutions
+#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment… sending it to kafka topic twitter-topic
+2022-04-23 09:37:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Sending message {"userId": 411419084, "id": 1517716778113441792, "text": "RT @ramsatt: Google Ads Linked In Assessment Solutions\n#angular #html #javascript #css #programming #java #python #reactjs #webdevelopment\u2026", "createdAt": 1650686852000} to topic twitter-topic
+2022-04-23 09:37:37 [kafka-producer-network-thread | producer-1] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Received new metadata. topic: twitter-topic, partition:2, offset: 146, timestamp: 1650686857554, at time 17908421648697
+2022-04-23 09:37:40 [SpringContextShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing Twitter stream
+2022-04-23 09:37:43 [SpringContextShutdownHook] INFO  c.m.d.p.c.s.i.TwitterKafkaProducer - Closing kafka template
+2022-04-23 09:37:43 [SpringContextShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
