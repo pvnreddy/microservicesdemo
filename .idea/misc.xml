@@ -10,6 +10,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/JasyptEncryptor/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/kafka-model/pom.xml" />
       </set>
     </option>
