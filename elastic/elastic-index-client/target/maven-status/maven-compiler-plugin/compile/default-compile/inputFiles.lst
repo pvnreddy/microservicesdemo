@@ -1,0 +1,5 @@
+/Users/vpamulap/Downloads/microservices-demo/elastic/elastic-index-client/src/main/java/com/microservices/demo/elastic/index/client/util/ElasticIndexUtil.java
+/Users/vpamulap/Downloads/microservices-demo/elastic/elastic-index-client/src/main/java/com/microservices/demo/elastic/index/client/service/ElasticIndexClient.java
+/Users/vpamulap/Downloads/microservices-demo/elastic/elastic-index-client/src/main/java/com/microservices/demo/elastic/index/client/service/impl/TwitterElasticIndexClient.java
+/Users/vpamulap/Downloads/microservices-demo/elastic/elastic-index-client/src/main/java/com/microservices/demo/elastic/index/client/service/impl/TwitterElasticRepositoryIndexClient.java
+/Users/vpamulap/Downloads/microservices-demo/elastic/elastic-index-client/src/main/java/com/microservices/demo/elastic/index/client/repository/TwitterElasticSearchIndexRepository.java
