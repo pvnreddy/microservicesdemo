@@ -9,7 +9,7 @@ spring:
           uri: https://github.com/pvnreddy/microservices-demo-config
           default-label: main
           username: pvnreddy
-          password: '{cipher}4f73f7854714a6f62c6c68d62e094c3f08ff059932dff9944c7c9bb0795ba0b4ed1343f8b6c2871d67848c326c0218e7918cd5867ed9ab9c4e7dfb27c1dd1fe5'
+          password: '{cipher}4a049a6618b36496600e9153c72f3767cd35eed0888e45f09aae824e51676a672f454b786581ad4883a9cbf064b4c0b815b855e616bcab67c2c26c18cc56a789'
           clone-on-start: true
     fail-fast: true
   security:

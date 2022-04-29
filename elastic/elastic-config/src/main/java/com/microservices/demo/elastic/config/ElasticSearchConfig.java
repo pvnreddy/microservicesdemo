@@ -3,7 +3,6 @@ package com.microservices.demo.elastic.config;
 import com.microservices.demo.config.ElasticConfigData;
 import org.apache.http.HttpHost;
 import org.elasticsearch.client.RestClient;
-import org.elasticsearch.client.RestClientBuilder;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,11 +12,10 @@ import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
-
 import java.util.Objects;
 
 @Configuration
-@EnableElasticsearchRepositories(basePackages = "com.microservices.demo.elastic.index.client.repository")
+@EnableElasticsearchRepositories(basePackages = "com.microservices.demo.elastic")
 public class ElasticSearchConfig extends AbstractElasticsearchConfiguration {
     private final ElasticConfigData elasticConfigData;
 
