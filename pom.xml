@@ -40,6 +40,7 @@
 		<spring-cloud-dependencies.version>Hoxton.SR9</spring-cloud-dependencies.version>
 		<jasypt-spring-boot-starter.version>3.0.3</jasypt-spring-boot-starter.version>
 		<elastic.version>7.9.1</elastic.version>
+		<spring-doc-openapi.version>1.5.0</spring-doc-openapi.version>
 
 	</properties>
 	<repositories>
@@ -223,6 +224,11 @@
 				<groupId>org.elasticsearch.client</groupId>
 				<artifactId>elasticsearch-rest-high-level-client</artifactId>
 				<version>${elastic.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-ui</artifactId>
+				<version>${spring-doc-openapi.version}</version>
 			</dependency>
 
 

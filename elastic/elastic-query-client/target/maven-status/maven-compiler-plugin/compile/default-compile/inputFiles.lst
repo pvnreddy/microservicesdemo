@@ -1,0 +1,6 @@
+/Users/vpamulap/Downloads/microservices-demo/elastic/elastic-query-client/src/main/java/com/microservices/demo/elastic/query/client/util/ElasticQueryUtil.java
+/Users/vpamulap/Downloads/microservices-demo/elastic/elastic-query-client/src/main/java/com/microservices/demo/elastic/query/client/exception/ElasticQueryClientException.java
+/Users/vpamulap/Downloads/microservices-demo/elastic/elastic-query-client/src/main/java/com/microservices/demo/elastic/query/client/repository/TwitterElasticSearchQueryRepository.java
+/Users/vpamulap/Downloads/microservices-demo/elastic/elastic-query-client/src/main/java/com/microservices/demo/elastic/query/client/service/impl/TwitterElasticQueryClient.java
+/Users/vpamulap/Downloads/microservices-demo/elastic/elastic-query-client/src/main/java/com/microservices/demo/elastic/query/client/service/impl/TwitterElasticRepositoryQueryClient.java
+/Users/vpamulap/Downloads/microservices-demo/elastic/elastic-query-client/src/main/java/com/microservices/demo/elastic/query/client/service/ElasticQueryClient.java
