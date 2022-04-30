@@ -1,20 +1,28 @@
-version: '3.7'
-services:
-  twitter-to-kafka-service:
-    image: ${GROUP_ID}/twitter.to.kafka.service:${SERVICE_VERSION:-latest}
-    ports:
-      - "5005:5005"
-    volumes:
-      - "./docker-logs:/workspace/twitter-to-kafka-service/logs"
-    environment:
-      - "JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -Xms128m -Xmx256m"
-      - "LOGGING_LEVEL_COM_MICROSERVICES_DEMO=info"
-      - "LOGGING_LEVEL_ROOT=info"
-      - "KAFKA-CONFIG_TOPIC-NAME=twitter-topic"
-      - "KAFKA-CONFIG_BOOTSTRAP-SERVERS=kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092"
-      - "KAFKA-CONFIG_SCHEMA-REGISTRY-URL=http://schema-registry:8081"
-      - "TWITTER-TO-KAFKA-SERVICE_MOCKTWEET-ENABLED=false"
-      - "SPRING_CLOUD_CONFIG_URI=http://config-server:8888"
-      - "ENCRYPT_KEY=${ENCRYPT_KEY}"
-    networks:
-      - ${GLOBAL_NETWORK:-services}
+elastic-query-service:
+  image: ${GROUP_ID}/elastic.query.service:${SERVICE_VERSION:-latest}
+  ports:
+    - "5008:5008"
+    - "8183:8183"
+  volumes:
+    - "./docker-logs:/workspace/elastic-query-service/logs"
+    - "./check-config-server-started.sh:/usr/local/bin/check-config-server-started.sh"
+  user: root
+  entrypoint: ["check-config-server-started.sh"]
+  depends_on:
+    - config-server
+    - kafka-to-elastic-service
+    - elastic-1
+    - elastic-2
+    - elastic-3
+  environment:
+    - "JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5008 -Xms128m -Xmx256m"
+    - "LOGGING_LEVEL_COM_MICROSERVICES_DEMO=info"
+    - "LOGGING_LEVEL_ROOT=info"
+    - "ELASTIC-CONFIG_ELASTIC-REPOSITORY-ENABLED=true"
+    - "SPRING_CLOUD_CONFIG_URI=http://config-server:8888"
+    - "SERVER_PORT=8183"
+    - "ELASTIC-CONFIG_INDEX-NAME=twitter-index"
+    - "ELASTIC-CONFIG_CONNECTION-URL=http://elastic-1:9200"
+    - "ENCRYPT_KEY=${ENCRYPT_KEY}"
+  networks:
+    - ${GLOBAL_NETWORK:-services}

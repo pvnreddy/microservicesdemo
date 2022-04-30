@@ -61,7 +61,7 @@ public class ElasticDocumentController {
     public @ResponseBody
     ResponseEntity<ElasticQueryServiceResponceModel> getDocumentById(@PathVariable @NotEmpty String id){
         ElasticQueryServiceResponceModel response = twitterElasticQueryService.getDocumentById(id);
-        LOG.info("Eastic search returned document with id",id);
+        LOG.info("Eastic search returned document with id "+id);
         return ResponseEntity.ok(response);
     }
 
@@ -78,7 +78,7 @@ public class ElasticDocumentController {
     public @ResponseBody
     ResponseEntity<ElasticQueryServiceResponceModelV2> getDocumentByIdV2(@PathVariable @NotEmpty String id){
         ElasticQueryServiceResponceModel response = twitterElasticQueryService.getDocumentById(id);
-        LOG.info("Eastic search returned document with id",id);
+        LOG.info("Eastic search returned document with id "+id);
         return ResponseEntity.ok(getmodelV2(response));
     }
 
