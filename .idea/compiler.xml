@@ -10,10 +10,13 @@
         <module name="elastic-index-client" />
         <module name="elastic-config" />
         <module name="common-util" />
+        <module name="reactive-elastic-query-web-client" />
         <module name="kafka-model" />
         <module name="kafka-consumer" />
+        <module name="elastic-query-web-client-common" />
         <module name="kafka-producer" />
         <module name="kafka-to-elastic-service" />
+        <module name="reactive-elastic-query-service" />
         <module name="kafka-admin" />
         <module name="config-server" />
         <module name="app-config-data" />
@@ -21,7 +24,9 @@
         <module name="elastic-query-client" />
         <module name="elastic-query-service" />
         <module name="twitter-to-kafka-service" />
+        <module name="elastic-query-web-client" />
         <module name="elastic-model" />
+        <module name="elastic-query-service-common" />
       </profile>
     </annotationProcessing>
   </component>
@@ -36,12 +41,17 @@
       <module name="elastic-model" options="-parameters" />
       <module name="elastic-query-client" options="-parameters" />
       <module name="elastic-query-service" options="-parameters" />
+      <module name="elastic-query-service-common" options="-parameters" />
+      <module name="elastic-query-web-client" options="-parameters" />
+      <module name="elastic-query-web-client-common" options="-parameters" />
       <module name="kafka-admin" options="-parameters" />
       <module name="kafka-consumer" options="-parameters" />
       <module name="kafka-model" options="-parameters" />
       <module name="kafka-producer" options="-parameters" />
       <module name="kafka-to-elastic-service" options="-parameters" />
       <module name="microservices-demo" options="" />
+      <module name="reactive-elastic-query-service" options="-parameters" />
+      <module name="reactive-elastic-query-web-client" options="-parameters" />
       <module name="twitter-to-kafka-service" options="-parameters" />
     </option>
   </component>

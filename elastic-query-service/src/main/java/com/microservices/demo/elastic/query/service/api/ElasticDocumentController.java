@@ -1,8 +1,8 @@
 package com.microservices.demo.elastic.query.service.api;
 
 import com.microservices.demo.elastic.query.service.business.impl.TwitterElasticQueryService;
-import com.microservices.demo.elastic.query.service.model.ElasticQueryServiceRequestModel;
-import com.microservices.demo.elastic.query.service.model.ElasticQueryServiceResponceModel;
+import com.microservices.demo.elastic.query.service.common.model.ElasticQueryServiceRequestModel;
+import com.microservices.demo.elastic.query.service.common.model.ElasticQueryServiceResponceModel;
 import com.microservices.demo.elastic.query.service.model.ElasticQueryServiceResponceModelV2;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -11,6 +11,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,6 +27,8 @@ public class ElasticDocumentController {
 
     private final TwitterElasticQueryService twitterElasticQueryService;
 
+    @Value("${server.port}")
+    private String port;
     public ElasticDocumentController(TwitterElasticQueryService twitterElasticQueryService) {
         this.twitterElasticQueryService = twitterElasticQueryService;
     }
@@ -96,7 +99,7 @@ public class ElasticDocumentController {
     ResponseEntity<List<ElasticQueryServiceResponceModel>> getDocumentByText(@RequestBody @Valid ElasticQueryServiceRequestModel elasticQueryServiceRequestModel){
         List<ElasticQueryServiceResponceModel> response = twitterElasticQueryService.getDocumentsByText(elasticQueryServiceRequestModel.getText());
         ElasticQueryServiceResponceModel elasticQueryServiceResponceModel= ElasticQueryServiceResponceModel.builder().text(elasticQueryServiceRequestModel.getText()).build();
-        LOG.info("Eastic search returned {} no of documents with text {}",response.size(), elasticQueryServiceRequestModel.getText());
+        LOG.info("Eastic search returned {} no of documents with text {} with port {}",response.size(), elasticQueryServiceRequestModel.getText(), port);
         response.add(elasticQueryServiceResponceModel);
         return ResponseEntity.ok(response);
     }

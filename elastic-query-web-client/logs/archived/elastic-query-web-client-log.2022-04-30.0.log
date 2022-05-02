@@ -1,0 +1,64 @@
+2022-04-30 23:55:33 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-04-30 23:55:35 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-04-30 23:55:37 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client, config-client, profiles=[elastic_query_web], label=null, version=8fb0da5b8e9b4fe6038022fe9cdf49c4e61c52b7, state=null
+2022-04-30 23:55:37 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/pvnreddy/microservices-demo-config/config-client.yml'}]
+2022-04-30 23:55:37 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2022-04-30 23:55:38 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=cc514418-6abc-38ad-92c0-5aa4d719b37d
+2022-04-30 23:55:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-30 23:55:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-30 23:55:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-30 23:55:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-04-30 23:55:38 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-30 23:55:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1452 ms
+2022-04-30 23:55:38 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webClientConfig' defined in file [/Users/vpamulap/Downloads/microservices-demo/elastic-query-web-client/target/classes/com/microservices/demo/elastic/query/web/client/config/WebClientConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.config.ElasticQueryWebClientConfigData$WebClientConfig' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-04-30 23:55:38 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-30 23:55:38 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-30 23:55:38 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.microservices.demo.elastic.query.web.client.config.WebClientConfig required a bean of type 'com.microservices.demo.config.ElasticQueryWebClientConfigData$WebClientConfig' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.config.ElasticQueryWebClientConfigData$WebClientConfig' in your configuration.
+
+2022-04-30 23:57:44 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-04-30 23:57:45 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-04-30 23:57:47 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client, config-client, profiles=[elastic_query_web], label=null, version=e5526191711b402dd54d8276497d134059f245b4, state=null
+2022-04-30 23:57:47 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/pvnreddy/microservices-demo-config/config-client-elastic_query_web.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/pvnreddy/microservices-demo-config/config-client.yml'}]
+2022-04-30 23:57:47 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2022-04-30 23:57:48 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=cc514418-6abc-38ad-92c0-5aa4d719b37d
+2022-04-30 23:57:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8184 (http)
+2022-04-30 23:57:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8184"]
+2022-04-30 23:57:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-30 23:57:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-04-30 23:57:49 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring embedded WebApplicationContext
+2022-04-30 23:57:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1270 ms
+2022-04-30 23:57:49 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webClientConfig' defined in file [/Users/vpamulap/Downloads/microservices-demo/elastic-query-web-client/target/classes/com/microservices/demo/elastic/query/web/client/config/WebClientConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.config.ElasticQueryWebClientConfigData$WebClientConfig' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-04-30 23:57:49 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-30 23:57:49 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-30 23:57:49 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.microservices.demo.elastic.query.web.client.config.WebClientConfig required a bean of type 'com.microservices.demo.config.ElasticQueryWebClientConfigData$WebClientConfig' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.config.ElasticQueryWebClientConfigData$WebClientConfig' in your configuration.
+

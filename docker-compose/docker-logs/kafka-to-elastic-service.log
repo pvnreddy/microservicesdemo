@@ -448,3 +448,889 @@ Using generated security password: e61c45d6-9203-4b53-a7b7-69d80c7cebaa
 2022-04-30 06:15:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [985607800410734592]. partitions [2] and offsets [28], sending it to Elastic: Thread id 29
 2022-04-30 06:15:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520285769453166593]
 2022-04-30 06:15:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520285769453166593]
+2022-04-30 20:40:57 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://config-server:8888
+2022-04-30 20:41:13 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=3378b07c11914efbfe6f1bc33115e0c769a022af, state=null
+2022-04-30 20:41:13 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/pvnreddy/microservices-demo-config/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/pvnreddy/microservices-demo-config/config-client.yml'}]
+2022-04-30 20:41:15 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-04-30 20:41:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-04-30 20:41:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2731ms. Found 1 Elasticsearch repository interfaces.
+2022-04-30 20:41:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-04-30 20:41:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 140ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-04-30 20:41:30 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=9146b973-e1af-3f48-94bd-bf3642831478
+2022-04-30 20:41:31 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$80381f13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-30 20:41:34 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-04-30 20:41:36 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-04-30 20:41:36 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-04-30 20:41:36 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1651351296797
+2022-04-30 20:41:44 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-04-30 20:41:44 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-04-30 20:41:44 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-04-30 20:41:44 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-04-30 20:41:45 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-04-30 20:41:45 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-04-30 20:41:45 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-04-30 20:41:45 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-04-30 20:42:02 [main] INFO  o.s.d.e.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.4.RELEASE
+2022-04-30 20:42:02 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2022-04-30 20:42:02 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client used: 7.9.1
+2022-04-30 20:42:02 [main] WARN  o.s.d.e.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.9.1
+2022-04-30 20:42:05 [main] WARN  o.s.d.e.r.s.AbstractElasticsearchRepository - Cannot create index: Connection refused; nested exception is java.lang.RuntimeException: Connection refused
+2022-04-30 20:42:07 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-04-30 20:42:07 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-04-30 20:42:07 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-04-30 20:42:07 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-04-30 20:42:08 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 77ff92b6-e1ea-4b4c-af9b-6f085f9a69c0
+
+2022-04-30 20:42:26 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitter-topic-consumer
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-04-30 20:42:26 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://schema-registry:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-04-30 20:42:27 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-04-30 20:42:27 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-04-30 20:42:27 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1651351347762
+2022-04-30 20:42:27 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Subscribed to topic(s): twitter-topic
+2022-04-30 20:42:27 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2022-04-30 20:42:28 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2022-04-30 20:42:28 [twitter-topic-consumer-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Cluster ID: 903DLq2WQIyULl-bqs-qHA
+2022-04-30 20:42:28 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Discovered group coordinator kafka-broker-1:9092 (id: 2147483646 rack: null)
+2022-04-30 20:42:28 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] (Re-)joining group
+2022-04-30 20:42:28 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 110.702 seconds (JVM running for 124.055)
+2022-04-30 20:42:28 [main] INFO  c.m.d.k.a.c.client.KafkaAdminClient - Reading Kafka topic [twitter-topic]. attempt 0
+2022-04-30 20:42:28 [main] INFO  c.m.d.k.a.c.client.KafkaAdminClient - Topic with name twitter-topic is ready
+2022-04-30 20:42:28 [main] INFO  c.m.d.k.a.c.client.KafkaAdminClient - Topic with name _schemas is ready
+2022-04-30 20:42:29 [main] INFO  c.m.d.k.a.c.client.KafkaAdminClient - Topic with name __confluent.support.metrics is ready
+2022-04-30 20:42:29 [main] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Topics with name twitter-topic are ready for operations!
+2022-04-30 20:42:32 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Finished assignment for group at generation 3: {consumer-twitter-topic-consumer-1-de600ab9-50ba-4ec9-9e53-2b96527f28fb=Assignment(partitions=[twitter-topic-0, twitter-topic-1, twitter-topic-2])}
+2022-04-30 20:42:32 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Successfully joined group with generation 3
+2022-04-30 20:42:32 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Adding newly assigned partitions: twitter-topic-0, twitter-topic-1, twitter-topic-2
+2022-04-30 20:42:32 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Setting offset for partition twitter-topic-0 to the committed offset FetchPosition{offset=37, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka-broker-1:9092 (id: 1 rack: null)], epoch=absent}}
+2022-04-30 20:42:32 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Setting offset for partition twitter-topic-1 to the committed offset FetchPosition{offset=18, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka-broker-1:9092 (id: 1 rack: null)], epoch=absent}}
+2022-04-30 20:42:32 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Setting offset for partition twitter-topic-2 to the committed offset FetchPosition{offset=29, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka-broker-1:9092 (id: 1 rack: null)], epoch=absent}}
+2022-04-30 20:42:32 [twitter-topic-consumer-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions assigned: [twitter-topic-0, twitter-topic-1, twitter-topic-2]
+2022-04-30 20:42:58 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [359776585]. partitions [0] and offsets [37], sending it to Elastic: Thread id 29
+2022-04-30 20:43:00 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520503955180113929]
+2022-04-30 20:43:00 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520503955180113929]
+2022-04-30 20:43:00 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [40532641]. partitions [2] and offsets [29], sending it to Elastic: Thread id 29
+2022-04-30 20:43:00 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520503956367196164]
+2022-04-30 20:43:00 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520503956367196164]
+2022-04-30 20:43:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [516234004]. partitions [0] and offsets [38], sending it to Elastic: Thread id 29
+2022-04-30 20:43:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504040454787072]
+2022-04-30 20:43:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504040454787072]
+2022-04-30 20:43:24 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1497590461480984582]. partitions [2] and offsets [30], sending it to Elastic: Thread id 29
+2022-04-30 20:43:25 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504092128432129]
+2022-04-30 20:43:25 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504092128432129]
+2022-04-30 20:43:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [99028844]. partitions [1] and offsets [18], sending it to Elastic: Thread id 29
+2022-04-30 20:43:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504126852853761]
+2022-04-30 20:43:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504126852853761]
+2022-04-30 20:43:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1142723462055780352]. partitions [1] and offsets [19], sending it to Elastic: Thread id 29
+2022-04-30 20:43:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504128031535104]
+2022-04-30 20:43:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504128031535104]
+2022-04-30 20:43:41 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1376508061746143243]. partitions [1] and offsets [20], sending it to Elastic: Thread id 29
+2022-04-30 20:43:41 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504159539240968]
+2022-04-30 20:43:41 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504159539240968]
+2022-04-30 20:43:41 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [783018552970256384]. partitions [0] and offsets [39], sending it to Elastic: Thread id 29
+2022-04-30 20:43:41 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504161393065984]
+2022-04-30 20:43:41 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504161393065984]
+2022-04-30 20:43:43 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [719279754134831104]. partitions [1] and offsets [21], sending it to Elastic: Thread id 29
+2022-04-30 20:43:43 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504168309481473]
+2022-04-30 20:43:43 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504168309481473]
+2022-04-30 20:43:46 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [842956176958476289]. partitions [0] and offsets [40], sending it to Elastic: Thread id 29
+2022-04-30 20:43:46 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504180720664577]
+2022-04-30 20:43:46 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504180720664577]
+2022-04-30 20:43:46 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [411419084]. partitions [2] and offsets [31], sending it to Elastic: Thread id 29
+2022-04-30 20:43:46 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504182989811712]
+2022-04-30 20:43:46 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504182989811712]
+2022-04-30 20:43:46 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1437728609909706753]. partitions [0] and offsets [41], sending it to Elastic: Thread id 29
+2022-04-30 20:43:46 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504182985605120]
+2022-04-30 20:43:46 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504182985605120]
+2022-04-30 20:43:48 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [716319971291361280]. partitions [2] and offsets [32], sending it to Elastic: Thread id 29
+2022-04-30 20:43:48 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504189570281473]
+2022-04-30 20:43:48 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504189570281473]
+2022-04-30 20:43:51 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [871787588239208448]. partitions [0] and offsets [42], sending it to Elastic: Thread id 29
+2022-04-30 20:43:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504205756313602]
+2022-04-30 20:43:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504205756313602]
+2022-04-30 20:43:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [871787588239208448]. partitions [0] and offsets [43], sending it to Elastic: Thread id 29
+2022-04-30 20:43:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504205827612673]
+2022-04-30 20:43:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504205827612673]
+2022-04-30 20:43:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [871787588239208448]. partitions [0] and offsets [44], sending it to Elastic: Thread id 29
+2022-04-30 20:43:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504205773049862]
+2022-04-30 20:43:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504205773049862]
+2022-04-30 20:43:58 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [72351120]. partitions [0] and offsets [45], sending it to Elastic: Thread id 29
+2022-04-30 20:43:58 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504233702969345]
+2022-04-30 20:43:58 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504233702969345]
+2022-04-30 20:44:03 [twitter-topic-consumer-0-C-1] WARN  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Offset commit failed on partition twitter-topic-0 at offset 46: The request timed out.
+2022-04-30 20:44:03 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Group coordinator kafka-broker-1:9092 (id: 2147483646 rack: null) is unavailable or invalid, will attempt rediscovery
+2022-04-30 20:44:03 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Discovered group coordinator kafka-broker-1:9092 (id: 2147483646 rack: null)
+2022-04-30 20:44:03 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Group coordinator kafka-broker-1:9092 (id: 2147483646 rack: null) is unavailable or invalid, will attempt rediscovery
+2022-04-30 20:44:03 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Discovered group coordinator kafka-broker-1:9092 (id: 2147483646 rack: null)
+2022-04-30 20:44:07 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1371493492640256011]. partitions [2] and offsets [33], sending it to Elastic: Thread id 29
+2022-04-30 20:44:07 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504270340374528]
+2022-04-30 20:44:07 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504270340374528]
+2022-04-30 20:44:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1338517741976870912]. partitions [2] and offsets [34], sending it to Elastic: Thread id 29
+2022-04-30 20:44:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504319925272576]
+2022-04-30 20:44:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504319925272576]
+2022-04-30 20:44:21 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1397699057804582931]. partitions [2] and offsets [35], sending it to Elastic: Thread id 29
+2022-04-30 20:44:21 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504329052078080]
+2022-04-30 20:44:21 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504329052078080]
+2022-04-30 20:44:24 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1083395003840450566]. partitions [0] and offsets [46], sending it to Elastic: Thread id 29
+2022-04-30 20:44:24 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504339596562434]
+2022-04-30 20:44:24 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504339596562434]
+2022-04-30 20:44:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1437728609909706753]. partitions [0] and offsets [47], sending it to Elastic: Thread id 29
+2022-04-30 20:44:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504363512647686]
+2022-04-30 20:44:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504363512647686]
+2022-04-30 20:44:31 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1483742223959306240]. partitions [1] and offsets [22], sending it to Elastic: Thread id 29
+2022-04-30 20:44:31 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504371095687169]
+2022-04-30 20:44:31 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504371095687169]
+2022-04-30 20:44:48 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1358707397825417220]. partitions [0] and offsets [48], sending it to Elastic: Thread id 29
+2022-04-30 20:44:48 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504441463623684]
+2022-04-30 20:44:48 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504441463623684]
+2022-04-30 20:44:55 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1272433034159992833]. partitions [0] and offsets [49], sending it to Elastic: Thread id 29
+2022-04-30 20:44:55 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504470773325828]
+2022-04-30 20:44:55 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504470773325828]
+2022-04-30 20:44:58 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [16515295]. partitions [1] and offsets [23], sending it to Elastic: Thread id 29
+2022-04-30 20:44:58 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504485847650304]
+2022-04-30 20:44:58 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504485847650304]
+2022-04-30 20:44:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1280935835789975553]. partitions [0] and offsets [50], sending it to Elastic: Thread id 29
+2022-04-30 20:44:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504487634423809]
+2022-04-30 20:44:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504487634423809]
+2022-04-30 20:45:05 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3040871649]. partitions [1] and offsets [24], sending it to Elastic: Thread id 29
+2022-04-30 20:45:06 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504515908284419]
+2022-04-30 20:45:06 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504515908284419]
+2022-04-30 20:45:06 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1358806251077922816]. partitions [2] and offsets [36], sending it to Elastic: Thread id 29
+2022-04-30 20:45:07 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504518970339328]
+2022-04-30 20:45:07 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504518970339328]
+2022-04-30 20:45:07 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1375961552122044417]. partitions [2] and offsets [37], sending it to Elastic: Thread id 29
+2022-04-30 20:45:07 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504520735748096]
+2022-04-30 20:45:07 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504520735748096]
+2022-04-30 20:45:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1101441126316367872]. partitions [0] and offsets [51], sending it to Elastic: Thread id 29
+2022-04-30 20:45:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504545645895680]
+2022-04-30 20:45:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504545645895680]
+2022-04-30 20:45:15 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [368832338]. partitions [0] and offsets [52], sending it to Elastic: Thread id 29
+2022-04-30 20:45:15 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504555372486656]
+2022-04-30 20:45:15 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504555372486656]
+2022-04-30 20:45:18 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1245480112146927617]. partitions [2] and offsets [38], sending it to Elastic: Thread id 29
+2022-04-30 20:45:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504570212151296]
+2022-04-30 20:45:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504570212151296]
+2022-04-30 20:45:20 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3092143749]. partitions [0] and offsets [53], sending it to Elastic: Thread id 29
+2022-04-30 20:45:20 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504578516475904]
+2022-04-30 20:45:20 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504578516475904]
+2022-04-30 20:45:27 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [978201573078773760]. partitions [0] and offsets [54], sending it to Elastic: Thread id 29
+2022-04-30 20:45:27 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504600834547713]
+2022-04-30 20:45:27 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504600834547713]
+2022-04-30 20:45:27 [twitter-topic-consumer-0-C-1] WARN  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Offset commit failed on partition twitter-topic-0 at offset 55: This is not the correct coordinator.
+2022-04-30 20:45:27 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Group coordinator kafka-broker-1:9092 (id: 2147483646 rack: null) is unavailable or invalid, will attempt rediscovery
+2022-04-30 20:45:27 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Discovered group coordinator kafka-broker-2:9092 (id: 2147483645 rack: null)
+2022-04-30 20:45:32 [kafka-coordinator-heartbeat-thread | twitter-topic-consumer] WARN  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Offset commit failed on partition twitter-topic-0 at offset 55: The request timed out.
+2022-04-30 20:45:32 [kafka-coordinator-heartbeat-thread | twitter-topic-consumer] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Group coordinator kafka-broker-2:9092 (id: 2147483645 rack: null) is unavailable or invalid, will attempt rediscovery
+2022-04-30 20:45:32 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Discovered group coordinator kafka-broker-2:9092 (id: 2147483645 rack: null)
+2022-04-30 20:45:32 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1448634978720436230]. partitions [2] and offsets [39], sending it to Elastic: Thread id 29
+2022-04-30 20:45:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504616802205698]
+2022-04-30 20:45:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504616802205698]
+2022-04-30 20:45:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [978201573078773760]. partitions [0] and offsets [55], sending it to Elastic: Thread id 29
+2022-04-30 20:45:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504609646821379]
+2022-04-30 20:45:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504609646821379]
+2022-04-30 20:45:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1294326215906598914]. partitions [0] and offsets [56], sending it to Elastic: Thread id 29
+2022-04-30 20:45:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504611832016904]
+2022-04-30 20:45:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504611832016904]
+2022-04-30 20:45:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1405595092811980802]. partitions [1] and offsets [25], sending it to Elastic: Thread id 29
+2022-04-30 20:45:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504629741641729]
+2022-04-30 20:45:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504629741641729]
+2022-04-30 20:45:45 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [57631615]. partitions [1] and offsets [26], sending it to Elastic: Thread id 29
+2022-04-30 20:45:45 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504681377800192]
+2022-04-30 20:45:45 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504681377800192]
+2022-04-30 20:45:49 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1364482870610427907]. partitions [0] and offsets [57], sending it to Elastic: Thread id 29
+2022-04-30 20:45:49 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504696166928384]
+2022-04-30 20:45:49 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504696166928384]
+2022-04-30 20:45:57 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [311391498]. partitions [0] and offsets [58], sending it to Elastic: Thread id 29
+2022-04-30 20:45:57 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504731076284416]
+2022-04-30 20:45:57 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504731076284416]
+2022-04-30 20:46:03 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1347291458278080513]. partitions [0] and offsets [59], sending it to Elastic: Thread id 29
+2022-04-30 20:46:03 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504757391360000]
+2022-04-30 20:46:03 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504757391360000]
+2022-04-30 20:46:10 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1371551211351121920]. partitions [2] and offsets [40], sending it to Elastic: Thread id 29
+2022-04-30 20:46:10 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504786856169472]
+2022-04-30 20:46:10 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504786856169472]
+2022-04-30 20:46:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [156318098]. partitions [0] and offsets [60], sending it to Elastic: Thread id 29
+2022-04-30 20:46:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504798969094146]
+2022-04-30 20:46:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504798969094146]
+2022-04-30 20:46:30 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1387510589187149827]. partitions [2] and offsets [41], sending it to Elastic: Thread id 29
+2022-04-30 20:46:30 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504870968692737]
+2022-04-30 20:46:30 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504870968692737]
+2022-04-30 20:46:34 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1502902213777178626]. partitions [1] and offsets [27], sending it to Elastic: Thread id 29
+2022-04-30 20:46:34 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504887460704256]
+2022-04-30 20:46:34 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504887460704256]
+2022-04-30 20:46:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1253238051905646594]. partitions [0] and offsets [61], sending it to Elastic: Thread id 29
+2022-04-30 20:46:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504908440559616]
+2022-04-30 20:46:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504908440559616]
+2022-04-30 20:46:42 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1509489182879752196]. partitions [2] and offsets [42], sending it to Elastic: Thread id 29
+2022-04-30 20:46:42 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504921614954496]
+2022-04-30 20:46:42 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504921614954496]
+2022-04-30 20:46:47 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [831267026601701382]. partitions [0] and offsets [62], sending it to Elastic: Thread id 29
+2022-04-30 20:46:47 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504942611546113]
+2022-04-30 20:46:47 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504942611546113]
+2022-04-30 20:46:47 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1442428435331125257]. partitions [2] and offsets [43], sending it to Elastic: Thread id 29
+2022-04-30 20:46:48 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504943479865346]
+2022-04-30 20:46:48 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504943479865346]
+2022-04-30 20:46:56 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1451057450208010243]. partitions [0] and offsets [63], sending it to Elastic: Thread id 29
+2022-04-30 20:46:57 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520504980741836800]
+2022-04-30 20:46:57 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520504980741836800]
+2022-04-30 20:47:11 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1507469746605862919]. partitions [1] and offsets [28], sending it to Elastic: Thread id 29
+2022-04-30 20:47:11 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505042775965696]
+2022-04-30 20:47:11 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505042775965696]
+2022-04-30 20:47:16 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1298682524235739136]. partitions [1] and offsets [29], sending it to Elastic: Thread id 29
+2022-04-30 20:47:16 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505063172501505]
+2022-04-30 20:47:16 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505063172501505]
+2022-04-30 20:47:21 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1403050441873707010]. partitions [2] and offsets [44], sending it to Elastic: Thread id 29
+2022-04-30 20:47:21 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505085071183878]
+2022-04-30 20:47:21 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505085071183878]
+2022-04-30 20:47:21 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1298682524235739136]. partitions [1] and offsets [30], sending it to Elastic: Thread id 29
+2022-04-30 20:47:21 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505085226221568]
+2022-04-30 20:47:21 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505085226221568]
+2022-04-30 20:47:22 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1298682524235739136]. partitions [1] and offsets [31], sending it to Elastic: Thread id 29
+2022-04-30 20:47:22 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505089391091712]
+2022-04-30 20:47:22 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505089391091712]
+2022-04-30 20:47:24 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1298682524235739136]. partitions [1] and offsets [32], sending it to Elastic: Thread id 29
+2022-04-30 20:47:24 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505096156565504]
+2022-04-30 20:47:24 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505096156565504]
+2022-04-30 20:47:26 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1046810504390311939]. partitions [0] and offsets [64], sending it to Elastic: Thread id 29
+2022-04-30 20:47:26 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505103731412993]
+2022-04-30 20:47:26 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505103731412993]
+2022-04-30 20:47:32 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [624540706]. partitions [1] and offsets [33], sending it to Elastic: Thread id 29
+2022-04-30 20:47:32 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505129702731778]
+2022-04-30 20:47:32 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505129702731778]
+2022-04-30 20:47:32 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1323707455164030978]. partitions [1] and offsets [34], sending it to Elastic: Thread id 29
+2022-04-30 20:47:32 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505130134687744]
+2022-04-30 20:47:32 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505130134687744]
+2022-04-30 20:47:34 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1608386678]. partitions [1] and offsets [35], sending it to Elastic: Thread id 29
+2022-04-30 20:47:34 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505139412537345]
+2022-04-30 20:47:34 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505139412537345]
+2022-04-30 20:47:35 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [172197580]. partitions [2] and offsets [45], sending it to Elastic: Thread id 29
+2022-04-30 20:47:35 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505140725248001]
+2022-04-30 20:47:35 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505140725248001]
+2022-04-30 20:47:40 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [811058560868159488]. partitions [2] and offsets [46], sending it to Elastic: Thread id 29
+2022-04-30 20:47:40 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505162745397248]
+2022-04-30 20:47:40 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505162745397248]
+2022-04-30 20:47:40 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1732294886]. partitions [0] and offsets [65], sending it to Elastic: Thread id 29
+2022-04-30 20:47:40 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505163995238400]
+2022-04-30 20:47:40 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505163995238400]
+2022-04-30 20:47:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1455527008935550978]. partitions [2] and offsets [47], sending it to Elastic: Thread id 29
+2022-04-30 20:47:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505212624158724]
+2022-04-30 20:47:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505212624158724]
+2022-04-30 20:47:54 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [761012779]. partitions [2] and offsets [48], sending it to Elastic: Thread id 29
+2022-04-30 20:47:54 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505222040367107]
+2022-04-30 20:47:54 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505222040367107]
+2022-04-30 20:47:57 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1311268164903280640]. partitions [1] and offsets [36], sending it to Elastic: Thread id 29
+2022-04-30 20:47:58 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505237399875584]
+2022-04-30 20:47:58 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505237399875584]
+2022-04-30 20:48:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1358806251077922816]. partitions [2] and offsets [49], sending it to Elastic: Thread id 29
+2022-04-30 20:48:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505281222176768]
+2022-04-30 20:48:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505281222176768]
+2022-04-30 20:48:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1375961552122044417]. partitions [2] and offsets [50], sending it to Elastic: Thread id 29
+2022-04-30 20:48:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505282367209472]
+2022-04-30 20:48:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505282367209472]
+2022-04-30 20:48:10 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1371551211351121920]. partitions [2] and offsets [51], sending it to Elastic: Thread id 29
+2022-04-30 20:48:10 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505291133104134]
+2022-04-30 20:48:10 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505291133104134]
+2022-04-30 20:48:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1315840667738869760]. partitions [2] and offsets [52], sending it to Elastic: Thread id 29
+2022-04-30 20:48:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505351572971522]
+2022-04-30 20:48:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505351572971522]
+2022-04-30 20:48:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1191905609785978880]. partitions [0] and offsets [66], sending it to Elastic: Thread id 29
+2022-04-30 20:48:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505386134028289]
+2022-04-30 20:48:33 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505386134028289]
+2022-04-30 20:48:36 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1512502871350251527]. partitions [1] and offsets [37], sending it to Elastic: Thread id 29
+2022-04-30 20:48:36 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505400084373508]
+2022-04-30 20:48:36 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505400084373508]
+2022-04-30 20:48:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1356093343114158081]. partitions [0] and offsets [67], sending it to Elastic: Thread id 29
+2022-04-30 20:48:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505408959311872]
+2022-04-30 20:48:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505408959311872]
+2022-04-30 20:48:40 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [361986623]. partitions [0] and offsets [68], sending it to Elastic: Thread id 29
+2022-04-30 20:48:40 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505414483333122]
+2022-04-30 20:48:40 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505414483333122]
+2022-04-30 20:48:47 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1235562764]. partitions [0] and offsets [69], sending it to Elastic: Thread id 29
+2022-04-30 20:48:47 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505445902917636]
+2022-04-30 20:48:47 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505445902917636]
+2022-04-30 20:48:48 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1001656139950501888]. partitions [0] and offsets [70], sending it to Elastic: Thread id 29
+2022-04-30 20:48:48 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505449086431233]
+2022-04-30 20:48:48 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505449086431233]
+2022-04-30 20:48:49 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [17225278]. partitions [0] and offsets [71], sending it to Elastic: Thread id 29
+2022-04-30 20:48:49 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505453410586624]
+2022-04-30 20:48:49 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505453410586624]
+2022-04-30 20:48:50 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1353889897]. partitions [0] and offsets [72], sending it to Elastic: Thread id 29
+2022-04-30 20:48:50 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505456653119488]
+2022-04-30 20:48:50 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505456653119488]
+2022-04-30 20:48:53 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1337103935417556997]. partitions [0] and offsets [73], sending it to Elastic: Thread id 29
+2022-04-30 20:48:53 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505470989086720]
+2022-04-30 20:48:53 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505470989086720]
+2022-04-30 20:48:56 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1145003646159065089]. partitions [1] and offsets [38], sending it to Elastic: Thread id 29
+2022-04-30 20:48:56 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505480967241729]
+2022-04-30 20:48:56 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505480967241729]
+2022-04-30 20:49:00 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1071505909]. partitions [0] and offsets [74], sending it to Elastic: Thread id 29
+2022-04-30 20:49:00 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505500898578435]
+2022-04-30 20:49:00 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505500898578435]
+2022-04-30 20:49:01 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1260015280048222208]. partitions [2] and offsets [53], sending it to Elastic: Thread id 29
+2022-04-30 20:49:01 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505505369702400]
+2022-04-30 20:49:01 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505505369702400]
+2022-04-30 20:49:05 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [772734185828122624]. partitions [2] and offsets [54], sending it to Elastic: Thread id 29
+2022-04-30 20:49:05 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505521719160833]
+2022-04-30 20:49:05 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505521719160833]
+2022-04-30 20:49:14 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1051649960]. partitions [1] and offsets [39], sending it to Elastic: Thread id 29
+2022-04-30 20:49:14 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505557072945160]
+2022-04-30 20:49:14 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505557072945160]
+2022-04-30 20:49:14 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1051649960]. partitions [1] and offsets [40], sending it to Elastic: Thread id 29
+2022-04-30 20:49:14 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505557102338051]
+2022-04-30 20:49:14 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505557102338051]
+2022-04-30 20:49:16 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1329304989903286272]. partitions [1] and offsets [41], sending it to Elastic: Thread id 29
+2022-04-30 20:49:16 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505565570646016]
+2022-04-30 20:49:16 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505565570646016]
+2022-04-30 20:49:16 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3111536505]. partitions [1] and offsets [42], sending it to Elastic: Thread id 29
+2022-04-30 20:49:16 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505565922971649]
+2022-04-30 20:49:16 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505565922971649]
+2022-04-30 20:49:16 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1415414698527313930]. partitions [1] and offsets [43], sending it to Elastic: Thread id 29
+2022-04-30 20:49:16 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505566786953217]
+2022-04-30 20:49:16 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505566786953217]
+2022-04-30 20:49:25 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [454827697]. partitions [2] and offsets [55], sending it to Elastic: Thread id 29
+2022-04-30 20:49:26 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505605659959296]
+2022-04-30 20:49:26 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505605659959296]
+2022-04-30 20:49:41 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [615974805]. partitions [0] and offsets [75], sending it to Elastic: Thread id 29
+2022-04-30 20:49:41 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505669669244928]
+2022-04-30 20:49:41 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505669669244928]
+2022-04-30 20:49:43 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1346926437039824896]. partitions [2] and offsets [56], sending it to Elastic: Thread id 29
+2022-04-30 20:49:43 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505679978577922]
+2022-04-30 20:49:43 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505679978577922]
+2022-04-30 20:49:51 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1117141051960111105]. partitions [1] and offsets [44], sending it to Elastic: Thread id 29
+2022-04-30 20:49:51 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505712429998080]
+2022-04-30 20:49:51 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505712429998080]
+2022-04-30 20:49:56 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [21789944]. partitions [0] and offsets [76], sending it to Elastic: Thread id 29
+2022-04-30 20:49:56 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505733443461120]
+2022-04-30 20:49:56 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505733443461120]
+2022-04-30 20:50:06 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1447598097643737093]. partitions [2] and offsets [57], sending it to Elastic: Thread id 29
+2022-04-30 20:50:06 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505777051607041]
+2022-04-30 20:50:06 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505777051607041]
+2022-04-30 20:50:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1510906257506377731]. partitions [2] and offsets [58], sending it to Elastic: Thread id 29
+2022-04-30 20:50:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505804876836864]
+2022-04-30 20:50:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505804876836864]
+2022-04-30 20:50:15 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [501604797]. partitions [0] and offsets [77], sending it to Elastic: Thread id 29
+2022-04-30 20:50:15 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505814586638337]
+2022-04-30 20:50:15 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505814586638337]
+2022-04-30 20:50:15 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [119585812]. partitions [0] and offsets [78], sending it to Elastic: Thread id 29
+2022-04-30 20:50:16 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505815790243845]
+2022-04-30 20:50:16 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505815790243845]
+2022-04-30 20:50:20 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [27498086]. partitions [1] and offsets [45], sending it to Elastic: Thread id 29
+2022-04-30 20:50:20 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505836203773952]
+2022-04-30 20:50:20 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505836203773952]
+2022-04-30 20:50:25 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1185991577107349505]. partitions [1] and offsets [46], sending it to Elastic: Thread id 29
+2022-04-30 20:50:25 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505854566543366]
+2022-04-30 20:50:25 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505854566543366]
+2022-04-30 20:50:28 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [748449634914181120]. partitions [1] and offsets [47], sending it to Elastic: Thread id 29
+2022-04-30 20:50:28 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505867229175808]
+2022-04-30 20:50:28 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505867229175808]
+2022-04-30 20:50:30 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1508286194785959944]. partitions [2] and offsets [59], sending it to Elastic: Thread id 29
+2022-04-30 20:50:30 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505876930564098]
+2022-04-30 20:50:30 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505876930564098]
+2022-04-30 20:50:30 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [982966600558088193]. partitions [2] and offsets [60], sending it to Elastic: Thread id 29
+2022-04-30 20:50:30 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505878394380292]
+2022-04-30 20:50:30 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505878394380292]
+2022-04-30 20:50:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1453148529199919108]. partitions [1] and offsets [48], sending it to Elastic: Thread id 29
+2022-04-30 20:50:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505913395892225]
+2022-04-30 20:50:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505913395892225]
+2022-04-30 20:51:01 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1493935054908796933]. partitions [0] and offsets [79], sending it to Elastic: Thread id 29
+2022-04-30 20:51:01 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520505954307084293]
+2022-04-30 20:51:01 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520505954307084293]
+2022-04-30 20:51:01 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1330973706106122240]. partitions [2] and offsets [61], sending it to Elastic: Thread id 29
+2022-04-30 20:51:01 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506006916186113]
+2022-04-30 20:51:01 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506006916186113]
+2022-04-30 20:51:05 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1501169003015909385]. partitions [2] and offsets [62], sending it to Elastic: Thread id 29
+2022-04-30 20:51:05 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506023383117829]
+2022-04-30 20:51:05 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506023383117829]
+2022-04-30 20:51:06 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1358806251077922816]. partitions [2] and offsets [63], sending it to Elastic: Thread id 29
+2022-04-30 20:51:06 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506028210921472]
+2022-04-30 20:51:06 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506028210921472]
+2022-04-30 20:51:07 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1375961552122044417]. partitions [2] and offsets [64], sending it to Elastic: Thread id 29
+2022-04-30 20:51:07 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506030232195072]
+2022-04-30 20:51:07 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506030232195072]
+2022-04-30 20:51:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [21789944]. partitions [0] and offsets [80], sending it to Elastic: Thread id 29
+2022-04-30 20:51:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506034393161729]
+2022-04-30 20:51:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506034393161729]
+2022-04-30 20:51:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1123957421800603648]. partitions [1] and offsets [49], sending it to Elastic: Thread id 29
+2022-04-30 20:51:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506041808863232]
+2022-04-30 20:51:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506041808863232]
+2022-04-30 20:51:18 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1468394322530009088]. partitions [1] and offsets [50], sending it to Elastic: Thread id 29
+2022-04-30 20:51:18 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506079838359552]
+2022-04-30 20:51:18 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506079838359552]
+2022-04-30 20:51:20 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3111536505]. partitions [1] and offsets [51], sending it to Elastic: Thread id 29
+2022-04-30 20:51:20 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506085072904193]
+2022-04-30 20:51:20 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506085072904193]
+2022-04-30 20:51:24 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1242786882905198592]. partitions [0] and offsets [81], sending it to Elastic: Thread id 29
+2022-04-30 20:51:24 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506104912187392]
+2022-04-30 20:51:24 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506104912187392]
+2022-04-30 20:51:30 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1468394322530009088]. partitions [1] and offsets [52], sending it to Elastic: Thread id 29
+2022-04-30 20:51:30 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506126831435776]
+2022-04-30 20:51:30 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506126831435776]
+2022-04-30 20:51:31 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2761099125]. partitions [1] and offsets [53], sending it to Elastic: Thread id 29
+2022-04-30 20:51:31 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506133101699072]
+2022-04-30 20:51:31 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506133101699072]
+2022-04-30 20:51:42 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [552312447]. partitions [1] and offsets [54], sending it to Elastic: Thread id 29
+2022-04-30 20:51:42 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506177808969736]
+2022-04-30 20:51:42 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506177808969736]
+2022-04-30 20:51:42 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1198296228997607424]. partitions [0] and offsets [82], sending it to Elastic: Thread id 29
+2022-04-30 20:51:42 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506178874355712]
+2022-04-30 20:51:42 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506178874355712]
+2022-04-30 20:51:45 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1476250198175358982]. partitions [0] and offsets [83], sending it to Elastic: Thread id 29
+2022-04-30 20:51:45 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506191629139968]
+2022-04-30 20:51:45 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506191629139968]
+2022-04-30 20:51:45 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [4219869147]. partitions [2] and offsets [65], sending it to Elastic: Thread id 29
+2022-04-30 20:51:46 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506192837193728]
+2022-04-30 20:51:46 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506192837193728]
+2022-04-30 20:51:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1159881870]. partitions [2] and offsets [66], sending it to Elastic: Thread id 29
+2022-04-30 20:51:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506221308125186]
+2022-04-30 20:51:52 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506221308125186]
+2022-04-30 20:51:55 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1198296228997607424]. partitions [0] and offsets [84], sending it to Elastic: Thread id 29
+2022-04-30 20:51:55 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506233664512006]
+2022-04-30 20:51:55 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506233664512006]
+2022-04-30 20:52:02 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2320819837]. partitions [1] and offsets [55], sending it to Elastic: Thread id 29
+2022-04-30 20:52:02 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506263678988290]
+2022-04-30 20:52:02 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506263678988290]
+2022-04-30 20:52:05 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1095125727421366274]. partitions [2] and offsets [67], sending it to Elastic: Thread id 29
+2022-04-30 20:52:05 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506274563211270]
+2022-04-30 20:52:05 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506274563211270]
+2022-04-30 20:52:11 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1095125727421366274]. partitions [2] and offsets [68], sending it to Elastic: Thread id 29
+2022-04-30 20:52:11 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506300043571203]
+2022-04-30 20:52:11 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506300043571203]
+2022-04-30 20:52:18 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1490012145915944960]. partitions [1] and offsets [56], sending it to Elastic: Thread id 29
+2022-04-30 20:52:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506332121649152]
+2022-04-30 20:52:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506332121649152]
+2022-04-30 20:52:22 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2467314443]. partitions [2] and offsets [69], sending it to Elastic: Thread id 29
+2022-04-30 20:52:22 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506347795664898]
+2022-04-30 20:52:22 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506347795664898]
+2022-04-30 20:52:23 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1441576083640360968]. partitions [0] and offsets [85], sending it to Elastic: Thread id 29
+2022-04-30 20:52:23 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506349934854149]
+2022-04-30 20:52:23 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506349934854149]
+2022-04-30 20:52:26 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1305472850195775489]. partitions [0] and offsets [86], sending it to Elastic: Thread id 29
+2022-04-30 20:52:26 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506362182213633]
+2022-04-30 20:52:26 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506362182213633]
+2022-04-30 20:52:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [713163097712754690]. partitions [0] and offsets [87], sending it to Elastic: Thread id 29
+2022-04-30 20:52:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506374228258818]
+2022-04-30 20:52:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506374228258818]
+2022-04-30 20:52:31 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [842956176958476289]. partitions [0] and offsets [88], sending it to Elastic: Thread id 29
+2022-04-30 20:52:31 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506385024266240]
+2022-04-30 20:52:31 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506385024266240]
+2022-04-30 20:52:34 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1437728609909706753]. partitions [0] and offsets [89], sending it to Elastic: Thread id 29
+2022-04-30 20:52:34 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506398211067906]
+2022-04-30 20:52:34 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506398211067906]
+2022-04-30 20:52:34 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [411419084]. partitions [2] and offsets [70], sending it to Elastic: Thread id 29
+2022-04-30 20:52:34 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506398328516608]
+2022-04-30 20:52:34 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506398328516608]
+2022-04-30 20:52:36 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [21480146]. partitions [0] and offsets [90], sending it to Elastic: Thread id 29
+2022-04-30 20:52:36 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506406067073025]
+2022-04-30 20:52:36 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506406067073025]
+2022-04-30 20:52:44 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1439511849796472833]. partitions [1] and offsets [57], sending it to Elastic: Thread id 29
+2022-04-30 20:52:44 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506437721415680]
+2022-04-30 20:52:44 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506437721415680]
+2022-04-30 20:52:54 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1093411692195700737]. partitions [1] and offsets [58], sending it to Elastic: Thread id 29
+2022-04-30 20:52:54 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506479949795329]
+2022-04-30 20:52:54 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506479949795329]
+2022-04-30 20:53:00 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [278797382]. partitions [0] and offsets [91], sending it to Elastic: Thread id 29
+2022-04-30 20:53:00 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506507162533888]
+2022-04-30 20:53:00 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506507162533888]
+2022-04-30 20:53:01 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [709564705304498176]. partitions [1] and offsets [59], sending it to Elastic: Thread id 29
+2022-04-30 20:53:01 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506511084163073]
+2022-04-30 20:53:01 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506511084163073]
+2022-04-30 20:53:01 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1280046714758598656]. partitions [2] and offsets [71], sending it to Elastic: Thread id 29
+2022-04-30 20:53:01 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506511142924292]
+2022-04-30 20:53:01 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506511142924292]
+2022-04-30 20:53:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1244774320766943232]. partitions [1] and offsets [60], sending it to Elastic: Thread id 29
+2022-04-30 20:53:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506539202813955]
+2022-04-30 20:53:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506539202813955]
+2022-04-30 20:53:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [757285705550815232]. partitions [0] and offsets [92], sending it to Elastic: Thread id 29
+2022-04-30 20:53:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506545389379584]
+2022-04-30 20:53:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506545389379584]
+2022-04-30 20:53:26 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [14303901]. partitions [1] and offsets [61], sending it to Elastic: Thread id 29
+2022-04-30 20:53:26 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506613701902336]
+2022-04-30 20:53:26 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506613701902336]
+2022-04-30 20:53:28 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1345638049305276416]. partitions [2] and offsets [72], sending it to Elastic: Thread id 29
+2022-04-30 20:53:28 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506621637632000]
+2022-04-30 20:53:28 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506621637632000]
+2022-04-30 20:53:32 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3167199663]. partitions [2] and offsets [73], sending it to Elastic: Thread id 29
+2022-04-30 20:53:32 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506640755306497]
+2022-04-30 20:53:32 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506640755306497]
+2022-04-30 20:53:41 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1520502730262994945]. partitions [2] and offsets [74], sending it to Elastic: Thread id 29
+2022-04-30 20:53:41 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506678982098946]
+2022-04-30 20:53:41 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506678982098946]
+2022-04-30 20:53:43 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1272200082184720386]. partitions [1] and offsets [62], sending it to Elastic: Thread id 29
+2022-04-30 20:53:43 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506686536097799]
+2022-04-30 20:53:43 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506686536097799]
+2022-04-30 20:53:48 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [916458084490506245]. partitions [2] and offsets [75], sending it to Elastic: Thread id 29
+2022-04-30 20:53:48 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506705481805825]
+2022-04-30 20:53:48 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506705481805825]
+2022-04-30 20:53:57 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1505988888648638469]. partitions [2] and offsets [76], sending it to Elastic: Thread id 29
+2022-04-30 20:53:57 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506745604521984]
+2022-04-30 20:53:57 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506745604521984]
+2022-04-30 20:54:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1358806251077922816]. partitions [2] and offsets [77], sending it to Elastic: Thread id 29
+2022-04-30 20:54:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506790458589184]
+2022-04-30 20:54:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506790458589184]
+2022-04-30 20:54:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1375961552122044417]. partitions [2] and offsets [78], sending it to Elastic: Thread id 29
+2022-04-30 20:54:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506792144699392]
+2022-04-30 20:54:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506792144699392]
+2022-04-30 20:54:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [15795722]. partitions [1] and offsets [63], sending it to Elastic: Thread id 29
+2022-04-30 20:54:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506792937246720]
+2022-04-30 20:54:08 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506792937246720]
+2022-04-30 20:54:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1191905609785978880]. partitions [0] and offsets [93], sending it to Elastic: Thread id 29
+2022-04-30 20:54:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506797542494208]
+2022-04-30 20:54:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506797542494208]
+2022-04-30 20:54:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [85792897]. partitions [2] and offsets [79], sending it to Elastic: Thread id 29
+2022-04-30 20:54:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506812482691080]
+2022-04-30 20:54:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506812482691080]
+2022-04-30 20:54:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1210204842628730883]. partitions [2] and offsets [80], sending it to Elastic: Thread id 29
+2022-04-30 20:54:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506813871009795]
+2022-04-30 20:54:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506813871009795]
+2022-04-30 20:54:15 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1444092350590980100]. partitions [1] and offsets [64], sending it to Elastic: Thread id 29
+2022-04-30 20:54:15 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506821743624192]
+2022-04-30 20:54:15 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506821743624192]
+2022-04-30 20:54:24 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1508762238806630407]. partitions [2] and offsets [81], sending it to Elastic: Thread id 29
+2022-04-30 20:54:24 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506857953153028]
+2022-04-30 20:54:24 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506857953153028]
+2022-04-30 20:54:34 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2838633220]. partitions [1] and offsets [65], sending it to Elastic: Thread id 29
+2022-04-30 20:54:34 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506899871019009]
+2022-04-30 20:54:34 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506899871019009]
+2022-04-30 20:54:41 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [268824997]. partitions [0] and offsets [94], sending it to Elastic: Thread id 29
+2022-04-30 20:54:41 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520506930363523072]
+2022-04-30 20:54:41 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520506930363523072]
+2022-04-30 20:55:07 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1371493492640256011]. partitions [2] and offsets [82], sending it to Elastic: Thread id 29
+2022-04-30 20:55:07 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507037326536705]
+2022-04-30 20:55:07 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507037326536705]
+2022-04-30 20:55:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [515956056]. partitions [1] and offsets [66], sending it to Elastic: Thread id 29
+2022-04-30 20:55:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507047648841729]
+2022-04-30 20:55:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507047648841729]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1398866593237508100]. partitions [0] and offsets [95], sending it to Elastic: Thread id 29
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507058768039941]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507058768039941]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1398866593237508100]. partitions [0] and offsets [96], sending it to Elastic: Thread id 29
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507058822557697]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507058822557697]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1398866593237508100]. partitions [0] and offsets [97], sending it to Elastic: Thread id 29
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507058830856192]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507058830856192]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1398866593237508100]. partitions [0] and offsets [98], sending it to Elastic: Thread id 29
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507058843525120]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507058843525120]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1398866593237508100]. partitions [0] and offsets [99], sending it to Elastic: Thread id 29
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507058847629312]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507058847629312]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1398866593237508100]. partitions [0] and offsets [100], sending it to Elastic: Thread id 29
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507058910552064]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507058910552064]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1398866593237508100]. partitions [0] and offsets [101], sending it to Elastic: Thread id 29
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507058889670657]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507058889670657]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1398866593237508100]. partitions [0] and offsets [102], sending it to Elastic: Thread id 29
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507058906349571]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507058906349571]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1398866593237508100]. partitions [0] and offsets [103], sending it to Elastic: Thread id 29
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507058931519490]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507058931519490]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1398866593237508100]. partitions [0] and offsets [104], sending it to Elastic: Thread id 29
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507058910605314]
+2022-04-30 20:55:12 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507058910605314]
+2022-04-30 20:55:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1027183102886662144]. partitions [1] and offsets [67], sending it to Elastic: Thread id 29
+2022-04-30 20:55:13 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507065411719174]
+2022-04-30 20:55:14 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507065411719174]
+2022-04-30 20:55:23 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [952953247655911425]. partitions [1] and offsets [68], sending it to Elastic: Thread id 29
+2022-04-30 20:55:23 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507105941237761]
+2022-04-30 20:55:23 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507105941237761]
+2022-04-30 20:55:26 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [158912165]. partitions [1] and offsets [69], sending it to Elastic: Thread id 29
+2022-04-30 20:55:26 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507120218939392]
+2022-04-30 20:55:26 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507120218939392]
+2022-04-30 20:55:50 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1432348817941143560]. partitions [1] and offsets [70], sending it to Elastic: Thread id 29
+2022-04-30 20:55:50 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507218814140416]
+2022-04-30 20:55:50 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507218814140416]
+2022-04-30 20:55:57 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [92654024]. partitions [0] and offsets [105], sending it to Elastic: Thread id 29
+2022-04-30 20:55:57 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticRepositoryIndexClient - Documents indexed successfully with typecom.microservices.demo.elastic.model.index.impl.TwitterIndexModel, Ids [1520507246710558722]
+2022-04-30 20:55:57 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elastic search with Ids [1520507246710558722]
+2022-04-30 21:27:54 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://config-server:8888
+2022-04-30 21:27:57 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://config-server:8888. Will be trying the next url if available
+2022-04-30 21:27:58 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://config-server:8888/kafka-to-elastic-service,config-client/kafka_to_elastic": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+2022-04-30 21:27:58 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-04-30 21:28:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-04-30 21:28:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2559ms. Found 1 Elasticsearch repository interfaces.
+2022-04-30 21:28:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-04-30 21:28:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 233ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-04-30 21:28:17 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=9146b973-e1af-3f48-94bd-bf3642831478
+2022-04-30 21:28:19 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$378241ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-30 21:28:23 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-04-30 21:28:25 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-04-30 21:28:25 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-04-30 21:28:25 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1651354105512
+2022-04-30 21:28:26 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaConsumer' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/kafka/to/elastic/service/consumer/impl/TwitterKafkaConsumer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in URL [jar:file:/workspace/BOOT-INF/lib/kafka-admin-0.0.1-SNAPSHOT.jar!/com/microservices/demo/kafka/admin/config/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 3; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'retryTemplate' defined in class path resource [com/microservices/demo/commom/config/RetryConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.retry.support.RetryTemplate]: Factory method 'retryTemplate' threw exception; nested exception is java.lang.NullPointerException
+2022-04-30 21:28:28 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1651354135622) timed out at 9223372036854775807 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call.
+2022-04-30 21:28:28 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-30 21:28:28 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaConsumer' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/kafka/to/elastic/service/consumer/impl/TwitterKafkaConsumer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in URL [jar:file:/workspace/BOOT-INF/lib/kafka-admin-0.0.1-SNAPSHOT.jar!/com/microservices/demo/kafka/admin/config/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 3; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'retryTemplate' defined in class path resource [com/microservices/demo/commom/config/RetryConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.retry.support.RetryTemplate]: Factory method 'retryTemplate' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.kafka.to.elastic.service.KafkaToElasticServiceApplication.main(KafkaToElasticServiceApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in URL [jar:file:/workspace/BOOT-INF/lib/kafka-admin-0.0.1-SNAPSHOT.jar!/com/microservices/demo/kafka/admin/config/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 3; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'retryTemplate' defined in class path resource [com/microservices/demo/commom/config/RetryConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.retry.support.RetryTemplate]: Factory method 'retryTemplate' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 28 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'retryTemplate' defined in class path resource [com/microservices/demo/commom/config/RetryConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.retry.support.RetryTemplate]: Factory method 'retryTemplate' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 42 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.retry.support.RetryTemplate]: Factory method 'retryTemplate' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 56 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at com.microservices.demo.commom.config.RetryConfig.retryTemplate(RetryConfig.java:20)
+	at com.microservices.demo.commom.config.RetryConfig$$EnhancerBySpringCGLIB$$a1928bfe.CGLIB$retryTemplate$0(<generated>)
+	at com.microservices.demo.commom.config.RetryConfig$$EnhancerBySpringCGLIB$$a1928bfe$$FastClassBySpringCGLIB$$53e98d1b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.microservices.demo.commom.config.RetryConfig$$EnhancerBySpringCGLIB$$a1928bfe.retryTemplate(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 57 common frames omitted

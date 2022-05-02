@@ -1,0 +1,6 @@
+com/microservices/demo/elastic/query/service/common/model/ElasticQueryServiceRequestModel.class
+com/microservices/demo/elastic/query/service/common/model/ElasticQueryServiceResponceModel$ElasticQueryServiceResponceModelBuilder.class
+com/microservices/demo/elastic/query/service/common/model/ElasticQueryServiceRequestModel$ElasticQueryServiceRequestModelBuilder.class
+com/microservices/demo/elastic/query/service/common/transformer/TwitterIndexModelToResponseModel.class
+com/microservices/demo/elastic/query/service/common/model/ElasticQueryServiceResponceModel.class
+com/microservices/demo/elastic/query/service/common/api/error/handler/ElasticQueryServiceErrorHandler.class

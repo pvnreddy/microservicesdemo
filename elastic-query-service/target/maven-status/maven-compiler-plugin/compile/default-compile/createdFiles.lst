@@ -2,13 +2,7 @@ com/microservices/demo/elastic/query/service/business/ElasticQueryService.class
 com/microservices/demo/elastic/query/service/model/ElasticQueryServiceResponceModelV2.class
 com/microservices/demo/elastic/query/service/api/ElasticDocumentController.class
 com/microservices/demo/elastic/query/service/config/WebSecurityConfig.class
-com/microservices/demo/elastic/query/service/transform/TwitterIndexModelToResponseModel.class
-com/microservices/demo/elastic/query/service/ElasticQueryServiceApplication.class
-com/microservices/demo/elastic/query/service/model/ElasticQueryServiceRequestModel.class
-com/microservices/demo/elastic/query/service/model/ElasticQueryServiceResponceModel.class
-com/microservices/demo/elastic/query/service/api/error/handler/ElasticQueryServiceErrorHandler.class
-com/microservices/demo/elastic/query/service/model/ElasticQueryServiceResponceModel$ElasticQueryServiceResponceModelBuilder.class
 com/microservices/demo/elastic/query/service/model/ElasticQueryServiceResponceModelV2$ElasticQueryServiceResponceModelV2Builder.class
+com/microservices/demo/elastic/query/service/ElasticQueryServiceApplication.class
 com/microservices/demo/elastic/query/service/business/impl/TwitterElasticQueryService.class
-com/microservices/demo/elastic/query/service/model/ElasticQueryServiceRequestModel$ElasticQueryServiceRequestModelBuilder.class
 com/microservices/demo/elastic/query/service/model/assembler/ElasticQueryServiceResponseModelAssembler.class

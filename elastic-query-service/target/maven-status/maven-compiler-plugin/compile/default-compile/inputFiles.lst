@@ -1,11 +1,7 @@
 /Users/vpamulap/Downloads/microservices-demo/elastic-query-service/src/main/java/com/microservices/demo/elastic/query/service/model/ElasticQueryServiceResponceModelV2.java
 /Users/vpamulap/Downloads/microservices-demo/elastic-query-service/src/main/java/com/microservices/demo/elastic/query/service/api/ElasticDocumentController.java
 /Users/vpamulap/Downloads/microservices-demo/elastic-query-service/src/main/java/com/microservices/demo/elastic/query/service/model/assembler/ElasticQueryServiceResponseModelAssembler.java
-/Users/vpamulap/Downloads/microservices-demo/elastic-query-service/src/main/java/com/microservices/demo/elastic/query/service/model/ElasticQueryServiceRequestModel.java
 /Users/vpamulap/Downloads/microservices-demo/elastic-query-service/src/main/java/com/microservices/demo/elastic/query/service/ElasticQueryServiceApplication.java
-/Users/vpamulap/Downloads/microservices-demo/elastic-query-service/src/main/java/com/microservices/demo/elastic/query/service/transform/TwitterIndexModelToResponseModel.java
-/Users/vpamulap/Downloads/microservices-demo/elastic-query-service/src/main/java/com/microservices/demo/elastic/query/service/api/error/handler/ElasticQueryServiceErrorHandler.java
-/Users/vpamulap/Downloads/microservices-demo/elastic-query-service/src/main/java/com/microservices/demo/elastic/query/service/model/ElasticQueryServiceResponceModel.java
 /Users/vpamulap/Downloads/microservices-demo/elastic-query-service/src/main/java/com/microservices/demo/elastic/query/service/business/ElasticQueryService.java
 /Users/vpamulap/Downloads/microservices-demo/elastic-query-service/src/main/java/com/microservices/demo/elastic/query/service/config/WebSecurityConfig.java
 /Users/vpamulap/Downloads/microservices-demo/elastic-query-service/src/main/java/com/microservices/demo/elastic/query/service/business/impl/TwitterElasticQueryService.java
