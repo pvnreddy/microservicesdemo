@@ -32,7 +32,7 @@ public class QueryController {
     public String error(){return "error";}
     @GetMapping("/home")
     public String home(Model model){
-        model.addAttribute("elasticQueryWebClientRequestModel" , ElasticQueryWebClientRequestModel.builder().build());
+        model.addAttribute("elasticQueryClientRequestModel" , ElasticQueryWebClientRequestModel.builder().build());
         return "home";
 
     }
@@ -42,9 +42,9 @@ public class QueryController {
         LOG.info("Querying with text {}",requestModel.getText());
         Flux<ElasticQueryWebClientResponseModel> responseModels= twitterElasticWebClientService.getDataByText(requestModel);
         responseModels= responseModels.log();
-        model.addAttribute("elasticQueryWebClientResponseModels",responseModels);
+        model.addAttribute("elasticQueryClientResponseModels",responseModels);
         model.addAttribute("searchText",requestModel.getText());
-        model.addAttribute("elasticQueryWebClientRequestModel",ElasticQueryWebClientRequestModel.builder().build());
+        model.addAttribute("elasticQueryClientRequestModel",ElasticQueryWebClientRequestModel.builder().build());
         LOG.info("Returning from reactive client controller with text {}",requestModel.getText());
         return "home";
     }

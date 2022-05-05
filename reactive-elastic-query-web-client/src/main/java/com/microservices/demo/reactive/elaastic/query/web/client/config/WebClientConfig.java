@@ -6,6 +6,8 @@ import io.netty.channel.ChannelOption;
 import io.netty.handler.timeout.ReadTimeoutHandler;
 import io.netty.handler.timeout.WriteTimeoutHandler;
 import org.apache.http.HttpHeaders;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.client.reactive.ReactorClientHttpConnector;
@@ -17,19 +19,31 @@ import java.util.concurrent.TimeUnit;
 
 @Configuration
 public class WebClientConfig {
+    private static final Logger LOG = LoggerFactory.getLogger(WebClientConfig.class);
     private  final ElasticQueryWebClientConfigData.WebClient elasticQueryWebClientConfigData;
 
-    public WebClientConfig(ElasticQueryWebClientConfigData elasticQueryWebClientConfigData, UserAuthConfig userAuthConfig) {
-        this.elasticQueryWebClientConfigData = elasticQueryWebClientConfigData.getWebClient();
+    public WebClientConfig(ElasticQueryWebClientConfigData elasticQueryConfigData, UserAuthConfig userAuthConfig) {
+        this.elasticQueryWebClientConfigData = elasticQueryConfigData.getWebClient();
 
     }
 
     @Bean("webClient")
-    public WebClient webClient(){
-        return WebClient.builder()
-                .baseUrl(elasticQueryWebClientConfigData.getBaseUrl())
-                .defaultHeader(HttpHeaders.CONTENT_TYPE,elasticQueryWebClientConfigData.getContentType())
-                .clientConnector(new ReactorClientHttpConnector(HttpClient.from(getTCPClient()))).build();
+    WebClient webClient() {
+        try {
+            return WebClient.builder()
+                    .baseUrl(elasticQueryWebClientConfigData.getBaseUrl())
+                    .defaultHeader(org.springframework.http.HttpHeaders.CONTENT_TYPE, elasticQueryWebClientConfigData.getContentType())
+                    .clientConnector(new ReactorClientHttpConnector(HttpClient.from(getTCPClient())))
+                    .codecs(configurer -> configurer
+                            .defaultCodecs()
+                            .maxInMemorySize(elasticQueryWebClientConfigData.getMaxInMemorySize()))
+                    .build();
+        }
+        catch (Exception e){
+            LOG.info("Print config value "+ elasticQueryWebClientConfigData.getBaseUrl());
+        }
+
+        return null;
     }
 
     private TcpClient getTCPClient() {

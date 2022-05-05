@@ -26,13 +26,6 @@ public class ElasticQueryWebClientConfigData {
         private String serviceId;
         private List<Instance> instances;
 
-
-        @Data
-        public static class Instance{
-            private String id;
-            private String host;
-            private Integer port;
-        }
     }
 
     @Data
@@ -40,6 +33,13 @@ public class ElasticQueryWebClientConfigData {
         private String method;
         private String uri;
         private String accept;
+    }
+
+    @Data
+    public static class Instance{
+        private String id;
+        private String host;
+        private Integer port;
     }
 
 
